@@ -83,3 +83,36 @@ Statement 객체를 통해 SQL 쿼리를 실행한 후, 그 결과를 다룰 때
 ### 🤚 SQLException
 
 DB와 관련된 모든 오류를 처리한다.
+
+위 객체들은 아래와 같이 사용될 수 있다.
+DB 연결 Java 프로그램을 구현해 본 사람이라면 눈에 익숙할 것이다.
+
+```
+import java.sql.*;
+
+public class FirstExample {
+   static final String DB_URL = "jdbc:mysql://localhost/TUTORIALSPOINT";
+   static final String USER = "guest";
+   static final String PASS = "guest123";
+   static final String QUERY = "SELECT id, first, last, age FROM Employees";
+
+   public static void main(String[] args) {
+      // Open a connection
+      try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+         Statement stmt = conn.createStatement();
+         ResultSet rs = stmt.executeQuery(QUERY);) {
+         // Extract data from result set
+         while (rs.next()) {
+            // Retrieve by column name
+            System.out.print("ID: " + rs.getInt("id"));
+            System.out.print(", Age: " + rs.getInt("age"));
+            System.out.print(", First: " + rs.getString("first"));
+            System.out.println(", Last: " + rs.getString("last"));
+         }
+      } catch (SQLException e) {
+         e.printStackTrace();
+      } 
+   }
+}
+```
+
