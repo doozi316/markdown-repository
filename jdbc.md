@@ -111,8 +111,65 @@ public class FirstExample {
          }
       } catch (SQLException e) {
          e.printStackTrace();
-      } 
+      }
    }
 }
 ```
 
+## 🤝 JDBC 데이터 베이스 연결 방법
+
+JDBC로 데이터 베이스를 연결하려면 크게 6가지 과정을 거쳐야한다.
+
+1. DB 선택하기 (ex. MySQL, PostgreSQL 등)
+2. 선택한 DB 공식 홈페이지에서 JDBC 드라이버를 다운로드한다.
+3. Java 프로젝트 코드 단에서 JDBC 라이브러리를 import 한다.
+4. 다운로드한 JDBC 드라이버를 코드 단에서 등록한다.
+5. 연결할 DB를 가리키는 URL을 등록한다.
+6. DriverManager 객체의 getConnectio() 메소드로 호출을 코딩하여 실제 데이터 베이스 연결을 설정한다.
+
+위 과정을 차근차근 설명해보겠다.
+
+### 🤚 Import JDBC Package
+
+1, 2번 과정은 크게 더 설명할 부분이 없으니 3번으로 넘어가자.
+
+JDBC 라이브러리를 프로젝트에 주입하는 부분이다.
+`import` 문으로 JDBC 라이브러리를 아래와 같이 JAVA 소스 코드 단에서 작성해주면 된다.
+
+```
+import java.sql.*; // 표준 JDBC
+import java.math.*; // BigDecimal, BigInteger 지원
+```
+
+### 🤚 JDBC 드라이버 등록
+
+DB 홈페이지에서 다운로드 받은 JDBC 드라이버를 프로젝트에 주입하는 과정이다.
+프로젝트에서 한번만 수행하면 된다.
+방법은 `Class.forName()`, `DriverManager.registerDriver()` 를 쓰는 방법 총 두가지이다.
+
+#### Class.forName()
+
+동적으로 JDBC 드라이버 클래스 파일을 메모리에 자동 등록 및 로드할 수 있다.
+이 방법을 사용하면 드라이버 구성과 이동이 편해 보편적으로 사용되는 편이다.
+
+#### DriverManager.registerDriver()
+
+Microsoft 에서 제공하는 것과 같은 비 JDK 호환 JVM을 사용하는 경우 사용된다.
+
+### 🤚 DB URL 등록
+
+JDBC 로 어떤 DB에 접근할 것인지 설정하는 단계이다.
+JDBC 드라이버를 로드한 후 `DriverManager.getConnection()` 메소드를 사용하여 설정할 수 있다.
+`DriverManager.getConnection()` 메소드 인자로 각 DB의 JDBC URL 을 입력해서 등록하면 된다.
+아래와 같이 DB 마다 JDBC 용 DB URL 이 다르다.
+
+| RDBMS  | JDBC 드라이버 이름              | URL 형식                                                |
+| ------ | ------------------------------- | ------------------------------------------------------- |
+| MySQL  | com.mysql.jdbc.Driver           | **jdbc:mysql://** \*/hostname/ databaseName             |
+| ORACLE | oracle.jdbc.driver.OracleDriver | **jdbc:oracle:thin:@**hostname:port Number:databaseName |
+| DB2    | COM.ibm.db2.jdbc.net.DB2Driver  | **jdbc:db2:**hostname:port Number/databaseName          |
+| Sybase | com.sybase.jdbc.SybDriver       | **jdbc:sybase:Tds:**hostname: port Number/databaseName  |
+
+진하게 칠해진 글씨 부분이 고정된 JDBC URL 값이고, 나머지 부분만 각 DB 환경에 맞게 작성해주면 된다.
+
+TODO: https://www.tutorialspoint.com/jdbc/jdbc-db-connections.htm - Using a Database URL with a username and password
