@@ -7,12 +7,12 @@
 **J**ava **D**ata**b**ase **C**onnectiviy 의 줄임말이다.
 직역하면, 자바 데이터베이스 연결성이란 뜻이다.
 
-결론적으로 JDBC는 Java 라이브러리이다.
+결론적으로 JDBC는 Java <u>라이브러리</u>이다.
 Java와 여러 DB 간의 연결을 위한 Java API의 집합이다.
 
 JDBC API 는 아래와 같은 역할을 한다.
 
-1. 데이터 베이스에 연결
+1. 어플리케이션과 DB 간의 연결
 2. SQL 문 만들기
 3. 데이터베이스에서 SQL 문 실행
 4. SQL 실행 결과 보기
@@ -33,13 +33,12 @@ JDBC 와 같은 기능을 하나, 아래와 같은 차이점이 있다.
 
 ## 🤝 JDBC 구조
 
-다소 허접하지만 그림으로 그려보았다 ^^
-JDBC API는 JDBC API 와 JDBC DRIVER API 로 크게 두가지로 나눌 수 있다.
+JDBC API는 **JDBC API** 와 **JDBC DRIVER API** 크게 두가지로 나눌 수 있다.
 
 JDBC API 는 자바 응용 프로그램과 JDBC Manager 간 연결을 제공하는 기능을 담당하고,
 JDBC DRIVER API 는 JDBC Manager 와 JDBC DRIVER 간의 연결을 지원한다.
 
-JDBC DRIVER 는 DB 쪽에서 제공하는 흔히 아는 jar 파일이다.
+JDBC DRIVER 는 DB 공식 홈페이지에서 제공하는 jar 파일이다.
 이 파일을 통해 DB 와의 연결이 가능하다.
 
 그럼 위 그림에서 JDBC Driver Manager는 무엇일까? (빨간 별표 부분)
@@ -57,9 +56,9 @@ JDBC 를 적용할 때 직접 코드에 써보게 될테니, 잘 알아두면 �
 
 ### 🤚 DriverManager
 
-방금 위에서 설명한 객체이다.
-데이터 베이스 드라이버 목록을 관리하는 클래스이다.
-통신 하위 프로토콜을 사용하여 Java 응용 프로그램 연결 요청을 적절한 데이터베이스와 일치시킨다.
+방금 위에서 설명한 객체이다. (빨간 별표 부분)
+데이터 베이스 드라이버(jar 파일)를 관리하는 클래스이다.
+Java 어플리케이션으로부터 온 DB 연결 요청을 적절한 데이터베이스와 연결시킨다.
 
 ### 🤚 Driver
 
@@ -85,7 +84,9 @@ Statement 객체를 통해 SQL 쿼리를 실행한 후, 그 결과를 다룰 때
 DB와 관련된 모든 오류를 처리한다.
 
 위 객체들은 아래와 같이 사용될 수 있다.
-DB 연결 Java 프로그램을 구현해 본 사람이라면 눈에 익숙할 것이다.
+DB 연결 Java 프로그램을 구현해 본 사람이라면 눈에 익숙할지도.
+
+### 🤚 예제
 
 ```
 import java.sql.*;
@@ -121,11 +122,11 @@ public class FirstExample {
 JDBC로 데이터 베이스를 연결하려면 크게 6가지 과정을 거쳐야한다.
 
 1. DB 선택하기 (ex. MySQL, PostgreSQL 등)
-2. 선택한 DB 공식 홈페이지에서 JDBC 드라이버를 다운로드한다.
-3. Java 프로젝트 코드 단에서 JDBC 라이브러리를 import 한다.
-4. 다운로드한 JDBC 드라이버를 코드 단에서 등록한다.
-5. 연결할 DB를 가리키는 URL을 등록한다.
-6. DriverManager 객체의 getConnectio() 메소드로 호출을 코딩하여 실제 데이터 베이스 연결을 설정한다.
+2. 선택한 DB 공식 홈페이지에서 JDBC 드라이버를 다운로드
+3. Java 프로젝트 코드 단에서 JDBC 라이브러리를 import
+4. 다운로드한 JDBC 드라이버를 코드 단에서 등록
+5. 연결할 DB를 가리키는 URL을 등록
+6. DriverManager 객체의 getConnectio() 메소드로 호출을 코딩하여 실제 데이터 베이스 연결을 설정
 
 위 과정을 차근차근 설명해보겠다.
 
@@ -163,13 +164,70 @@ JDBC 드라이버를 로드한 후 `DriverManager.getConnection()` 메소드를 
 `DriverManager.getConnection()` 메소드 인자로 각 DB의 JDBC URL 을 입력해서 등록하면 된다.
 아래와 같이 DB 마다 JDBC 용 DB URL 이 다르다.
 
-| RDBMS  | JDBC 드라이버 이름              | URL 형식                                                |
-| ------ | ------------------------------- | ------------------------------------------------------- |
-| MySQL  | com.mysql.jdbc.Driver           | **jdbc:mysql://** \*/hostname/ databaseName             |
-| ORACLE | oracle.jdbc.driver.OracleDriver | **jdbc:oracle:thin:@**hostname:port Number:databaseName |
-| DB2    | COM.ibm.db2.jdbc.net.DB2Driver  | **jdbc:db2:**hostname:port Number/databaseName          |
-| Sybase | com.sybase.jdbc.SybDriver       | **jdbc:sybase:Tds:**hostname: port Number/databaseName  |
+| RDBMS  | JDBC 드라이버                   | URL 형식                                                 |
+| ------ | ------------------------------- | -------------------------------------------------------- |
+| MySQL  | com.mysql.jdbc.Driver           | **jdbc:mysql://** hostname/databaseName                  |
+| ORACLE | oracle.jdbc.driver.OracleDriver | **jdbc:oracle:thin:@** hostname:port Number:databaseName |
+| DB2    | COM.ibm.db2.jdbc.net.DB2Driver  | **jdbc:db2:** hostname:port Number/databaseName          |
+| Sybase | com.sybase.jdbc.SybDriver       | **jdbc:sybase:Tds:** hostname: port Number/databaseName  |
 
 진하게 칠해진 글씨 부분이 고정된 JDBC URL 값이고, 나머지 부분만 각 DB 환경에 맞게 작성해주면 된다.
 
-TODO: https://www.tutorialspoint.com/jdbc/jdbc-db-connections.htm - Using a Database URL with a username and password
+```
+DriverManager.getConnection(String url);
+```
+
+### 🤚 User, Password 등록
+
+`DriverManager.getConnection()` 메소드 인자로 JDBC URL 을 넣어 어떤 DB에 연결할건지 설정해줄 수 있다고 앞서 설명했는데,
+사실 이 정보만으로는 DB에 연결하기 어렵다.
+DB에 접속하기위해선 이 DB에 접근 가능한 권한이 있어야한다.
+즉, User와 Password 정보를 `DriverManager.getConnection()` JDBC URL과 함께 인자로 넘겨야한다.
+
+아래 예시와 같이 여러 방법으로 `DriverManager.getConnection()` 에 JDBC URL 과 User, Password를 인자로 넘길 수 있다.
+
+**문자열 하나로 통째로 넘기기**
+
+```
+String URL = "jdbc:oracle:thin:username/password@amrood:1521:EMP";
+Connection conn = DriverManager.getConnection(URL);
+```
+
+**각각 인자로 넘기기**
+
+```
+String URL = "jdbc:oracle:thin:@amrood:1521:EMP";
+String USER = "username";
+String PASS = "password"
+Connection conn = DriverManager.getConnection(URL, USER, PASS);
+```
+
+**Properties 객체 사용하기**
+
+💡 **Properties**
+
+키, 값으로 이뤄진 객체
+
+```
+import java.util.*;
+
+String URL = "jdbc:oracle:thin:@amrood:1521:EMP";
+Properties info = new Properties( );
+info.put( "user", "username" );
+info.put( "password", "password" );
+
+Connection conn = DriverManager.getConnection(URL, info);
+```
+
+## 🤝 JDBC 데이터 베이스 연결 닫기
+
+JDBC 프로그램이 끝나면 DB 연결을 명시적으로 종료시켜줘야한다.
+그러나, 이를 까먹을 경우 Java 의 가비지 콜렉터가 DB 연결을 닫고 비운다.
+그렇다고 가비지 콜렉터에 의존하면 좋지못한 프로그램이니 명시적으로 꼭 종료시켜주자.
+DB 연결은 아래와 같이 작성해 닫아줄 수 있다.
+
+```
+conn.close();
+```
+
+이렇게 명시적으로 연결을 닫으면 DBMS 자원을 아낄 수 있어 DB 관리하기 용이하다.
