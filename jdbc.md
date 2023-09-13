@@ -9,6 +9,10 @@
 
 결론적으로 JDBC는 Java <u>라이브러리</u>이다.
 Java와 여러 DB 간의 연결을 위한 Java API의 집합이다.
+라이브러리, API 개념을 잘 모르겠다면 아래 두 포스팅을 참고.
+
+-   [프레임워크(Framework), 라이브러리(Library), 플러그인(Plug-in), 모듈(Module)의 차이](https://doozi0316.tistory.com/entry/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%ACFramework-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%ACLibrary-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8Plug-in-%EB%AA%A8%EB%93%88Module%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+-   [SDK, API의 개념과 차이점](https://doozi0316.tistory.com/entry/SDK-API%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 
 JDBC API 는 아래와 같은 역할을 한다.
 
@@ -224,6 +228,11 @@ Connection conn = DriverManager.getConnection(URL, info);
 JDBC 프로그램이 끝나면 DB 연결을 명시적으로 종료시켜줘야한다.
 그러나, 이를 까먹을 경우 Java 의 가비지 콜렉터가 DB 연결을 닫고 비운다.
 그렇다고 가비지 콜렉터에 의존하면 좋지못한 프로그램이니 명시적으로 꼭 종료시켜주자.
+
+가비지 콜렉터의 개념을 잘 모르겠다면 아래 포스팅을 참고.
+
+-   [[JAVA] JVM이란? 개념 및 구조 (JDK, JRE, JIT, 가비지 콜렉터...)](https://doozi0316.tistory.com/entry/1%EC%A3%BC%EC%B0%A8-JVM%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EB%A9%B0-%EC%9E%90%EB%B0%94-%EC%BD%94%EB%93%9C%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B8%EA%B0%80)
+
 DB 연결은 아래와 같이 작성해 닫아줄 수 있다.
 
 ```
