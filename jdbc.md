@@ -1,6 +1,6 @@
 ## 📢 들어가며
 
-이번 포스팅에선 JDBC 에 대해 알아본다.
+이번 포스팅에선 JDBC 그리고 커넥션, 커넥션 풀에 대해 알아본다.
 
 ## 🤝 JDBC란?
 
@@ -240,3 +240,146 @@ conn.close();
 ```
 
 이렇게 명시적으로 연결을 닫으면 DBMS 자원을 아낄 수 있어 DB 관리하기 용이하다.
+
+## 🤝 Statement
+
+앞서 [JDBC 구성 객체](#jdbc-구성-객체)에서 설명한 **Statement** 인터페이스에 대해 좀 더 자세히 알아보자.
+
+Statement 인터페이스는 SQL 명령을 DB로 보내고 결과를 받는데 필요한 메소드나 프로퍼티들을 정의하고 있다.
+또한, Java 와 서로 다른 SQL 데이터 타입을 잇는 메소드를 제공한다.
+
+Statement 는 크게 세가지가 존재한다.
+
+| 인터페이스        | 사용처                                                                                                   |
+| ----------------- | -------------------------------------------------------------------------------------------------------- |
+| Statement         | 런타임에 정적 SQL 문을 사용할 때 유용하다. SQL 명령을 보낼 때 파라미터를 함께 보내는 걸 허용하지 않는다. |
+| PreparedStatement | SQL 명령을 여러번 보낼 때 유용하다. 런타임 때 파라미터를 함께 보내는 걸 허용한다.                        |
+| CallableStatement | DB 내 프로시저에 접근할때 유용하다. 런타임 때 파라미터를 함께 보내는 걸 허용한다.                        |
+
+### 🤚 Statement
+
+#### Statement 객체 생성하기
+
+SQL 문을 실행하기 위해 Statment 객체를 사용하기 전에,
+먼저 Connection 객체의 `createStatment()` 메소드로 Statement 객체를 생성해야한다.
+
+```
+Statement stmt = null;
+try {
+   stmt = conn.createStatement( );
+   . . .
+}
+catch (SQLException e) {
+   . . .
+}
+finally {
+   . . .
+}
+```
+
+Statement 객체를 생성하고 나면, 아래 세가지 메소드를 통해 SQL 문을 한 번 실행 시킬 수 있다.
+
+-   boolean execute(String SQL)
+    -   결과 값을 받으면 true를 반환하는 메소드이다. 결과가 없다면 false 를 반환한다. DDL(create, drop...)을 쓸 때 유용하다.
+-   int executeUpdate(String SQL)
+    -   결과 rows의 개수를 반환하는 메소드이다. insert, update, delete 문에 유용하다.
+-   ResultSet executeQuery(String SQL)
+    -   ResultSet 객체를 반환하는 메소드이다. select 문에 유용하다.
+
+#### Statement 객체 닫기
+
+Connectino 객체를 닫듯이, DB 자원을 낭비하지 않기 위해서 Statement 객체도 닫아줘야한다.
+Statement 객체는 한 SQL 문 당 하나라고 생각하면 된다.
+Statement 객체를 여러번 사용하려하지 말고, 한 SQL 문을 실행시켰다면 바로 닫아주자.
+단순히 `close()` 메소드만 호출해주면 된다.
+
+```
+Statement stmt = null;
+try {
+   stmt = conn.createStatement( );
+   . . .
+}
+catch (SQLException e) {
+   . . .
+}
+finally {
+   stmt.close();
+}
+```
+
+### 🤚 PreparedStatment
+
+#### PreparedStatment 객체 생성하기
+
+```
+// PreparedStatement 생성
+String sql = "SELECT * FROM your_table WHERE column1 = ? AND column2 = ?";
+PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+// 두 개의 매개변수 설정
+String parameterValue1 = "value1";
+String parameterValue2 = "value2";
+preparedStatement.setString(1, parameterValue1);
+preparedStatement.setString(2, parameterValue2);
+
+// 쿼리 실행
+ResultSet resultSet = preparedStatement.executeQuery();
+```
+
+PreparedStatement 는 SQL 와 파라미터를 함께 보내 실행시킬 수 있다.
+JDBC 의 모든 파라미터는 파라미터 마커인 물음표로 표현된다.
+물음표(파라미터)의 값은 실행 전에 반드시 전달되어야한다.
+그렇제 않다면 SQLException 이 발생한다.
+
+물음표에 값을 주기 위해선 `setXXX()` 메소드를 쓰면 된다.
+여기서 XXX는 매개 변수에 바인딩할 값의 Java 데이터 유형을 나타낸다.
+예를 들면, `setString()`.
+
+각 파라미터 마커(물음표)는 순서에 따라 참조된다.
+첫번째 마커(물음표)의 위치는 1, 두번째 마커(물음표)의 위치는 2.
+0부터 시작되는 Java 배열과는 살짝 다르다는 걸 알 수 있다.
+
+Statement 객체에서 사용된 모든 메소드를 PreparedStatment 에서도 사용할 수 있다.
+
+#### PreparedStatment 객체 닫기
+
+Statement 객체를 닫는 것과 같은 이유로 PreparedStatement 객체도 닫아줘야한다.
+역시, 간단히 `close()` 메소드만 호출해주면 된다.
+
+```
+PreparedStatement pstmt = null;
+try {
+   String SQL = "Update Employees SET age = ? WHERE id = ?";
+   pstmt = conn.prepareStatement(SQL);
+   . . .
+}
+catch (SQLException e) {
+   . . .
+}
+finally {
+   pstmt.close();
+}
+```
+
+참고로 Statement 객체와 다르게 PreparedStatment 객체는 객체를 바로 닫지 않고
+쿼리를 여러번 실행 시킨 뒤 닫아줄 수 있다.
+
+```
+// Execute the statement
+try (PreparedStatement pstmt = connection.prepareStatement("SELECT 1 FROM DUAL")) {
+
+    // Fetch a first ResultSet
+    try (ResultSet rs1 = pstmt.executeQuery()) { ... }
+
+    // Without closing the statement, execute it again to fetch another ResultSet
+    try (ResultSet rs2 = pstmt.executeQuery()) { ... }
+} finally {
+   pstmt.close();
+}
+```
+
+### 🤚 CallableStatment
+
+// TODO Statement, PreparedStatment...
+// ResultSet
+// TODO Connection Pool (다른 라이브러리 사용해야함) https://steady-coding.tistory.com/564
