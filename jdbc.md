@@ -514,9 +514,6 @@ ResultSet 인터페이스가 하는 일은 크게 세가지로 나눌 수 있다
 * 커서가 가리키고 있는 데이터 가져오기
 
 * 커서가 가리키고 있는 데이터 업데이트 하기. 원본 데이터의 업데이트 가능
-  
-  
-  
 
 앞서 설명한 Statement 를 통해 쿼리를 실행시키고, ResultSet을 얻을 수 있는데,
 
@@ -528,18 +525,12 @@ prepareStatment(string SQL, int RSType, int RSConcurrency);
 prepareCall(String sql, int RSType, int RSConcurrency);
 ```
 
-
-
 ### ResultSetType
 
 예제 코드에서 편의를 위해 ResultSetType의 줄임말로 RSType 이라고 명칭했다. 
 
 ResultSetType 엔 아래와 같은 세가지 타입을 줄 수 있다.
 
-|     |     |
-| --- | --- |
-|     |     |
-|     |     |
 |     |     |
 
 #### 출처
