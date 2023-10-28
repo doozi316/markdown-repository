@@ -14,6 +14,13 @@ Java로 개발된 프로그램과와 DB 간의 연결을 위한 Java API의 집�
 - [프레임워크(Framework), 라이브러리(Library), 플러그인(Plug-in), 모듈(Module)의 차이](https://doozi0316.tistory.com/entry/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%ACFramework-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%ACLibrary-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8Plug-in-%EB%AA%A8%EB%93%88Module%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 - [SDK, API의 개념과 차이점](https://doozi0316.tistory.com/entry/SDK-API%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 
+
+
+JDBC는 JDK에 포함되어 있기 때문에,
+JAVA를 사용한다면 별도의 다운로드 과정이 필요 없다.
+
+
+
 JDBC API 는 아래와 같은 역할을 한다.
 
 1. 자바 어플리케이션과 DB 간의 연결
@@ -387,8 +394,6 @@ try (PreparedStatement pstmt = connection.prepareStatement("SELECT 1 FROM DUAL")
 
 CallableStatment 객체는 데이터베이스에 저장된 프로시저를 불러오고 실행시킬 수 있게한다. 
 
-
-
 #### 프로시저 생성하기
 
 CallableStatment 는 PreparedStatment 처럼 파라미터를 넘길 수 있다.
@@ -411,21 +416,15 @@ END;
 
 그런데 파라미터 명 뒤의 `IN`, `OUT` 은 무슨 뜻일까?
 
-
-
 PreparedStatement가 IN(받는) 파라미터만 사용됐던 반면,
 
 CallableStatement는 크게 세가지 파라미터를 사용할 수 있다.
-
-
 
 | 파라미터  | 설명                                                                          |
 | ----- | --------------------------------------------------------------------------- |
 | IN    | SQL statment가 생성될 땐 값을 알 수 없고, setXXX() 따위로 값을 바인딩해줘야 알 수 있는 파라미터           |
 | OUT   | SQL statment가 반환될 때 제공되는 값. getXXX() 메소드로 해당 파라미터 값을 얻을 수 있다.               |
 | INOUT | input과 output을 모두 제공하는 파라미터. setXXX()로 값을 바인딩하고 getXXX() 메소드로 값을 반환받을 수 있다. |
-
-
 
 #### CallableStatment 객체 생성 및 실행
 
@@ -435,17 +434,17 @@ try {
    CallableStatement cstmt = null;
    String SQL = "{call getEmpName (?, ?)}";
    cstmt = conn.prepareCall (SQL);
-        
+
    // 입력 매개변수 설정 (첫 번째 매개변수)
    int inputParameter = 123;
    callableStatement.setInt(1, inputParameter);
-            
+
    // 출력 매개변수 등록 (두 번째 매개변수)
    callableStatement.registerOutParameter(2, Types.VARCHAR);
-            
+
    // 저장 프로시저 실행
    callableStatement.execute();
-            
+
    // 출력 매개변수의 값을 가져오기
    int outputParameter = callableStatement.getInt(2);
 }
@@ -473,15 +472,11 @@ CallableStatment 만의 새로운 요소인 출력 파라미터를 사용하기 
 
 출력 파라미터 위치(순서)와 타입을 바인딩하는 용도이다.
 
-
-
 모든 파라미터를 바인딩 해준 뒤 `execute` 메소드로 실행시킬 수 있고,
 
 출력 파라미터는 실행 이후에 getXXX()로 값을 반환받을 수 있다. 
 
 여기서 XXX에는 타입을 입력해주면 된다.
-
-
 
 #### CallableStatment 객체 닫기
 
@@ -512,11 +507,17 @@ Statment 객체의 execute 메소드 등을 이용해 SQL 문을 실행시키는
 
 
 
+`exeute` 메소드 등으로 조회한 쿼리 결과는 ResultSet 이라는 인터페이스에 담겨 온다. 
+
+ResultSet은 커서로 쿼리 결과의 한 행을 가리키고 있다.
+
+때문에 
 
 
 
+ResultSet 이 하는 일은 크게 세가지로 나눌 수 있다.
 
-
+- 
 
 
 
