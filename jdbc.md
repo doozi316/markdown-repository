@@ -14,12 +14,8 @@ Java로 개발된 프로그램과와 DB 간의 연결을 위한 Java API의 집�
 - [프레임워크(Framework), 라이브러리(Library), 플러그인(Plug-in), 모듈(Module)의 차이](https://doozi0316.tistory.com/entry/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%ACFramework-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%ACLibrary-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8Plug-in-%EB%AA%A8%EB%93%88Module%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 - [SDK, API의 개념과 차이점](https://doozi0316.tistory.com/entry/SDK-API%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 
-
-
 JDBC는 JDK에 포함되어 있기 때문에,
 JAVA를 사용한다면 별도의 다운로드 과정이 필요 없다.
-
-
 
 JDBC API 는 아래와 같은 역할을 한다.
 
@@ -433,7 +429,7 @@ try {
    // 저장 프로시저 호출을 위한 CallableStatement 생성
    CallableStatement cstmt = null;
    String SQL = "{call getEmpName (?, ?)}";
-   cstmt = conn.prepareCall (SQL);
+   cstmt = conn.prepareCall(SQL);
 
    // 입력 매개변수 설정 (첫 번째 매개변수)
    int inputParameter = 123;
@@ -505,21 +501,46 @@ Statment 객체의 execute 메소드 등을 이용해 SQL 문을 실행시키는
 
 이제 이 SQL의 실행 결과를 조회하는 방법을 알아보자. 
 
-
-
 `exeute` 메소드 등으로 조회한 쿼리 결과는 ResultSet 이라는 인터페이스에 담겨 온다. 
 
 ResultSet은 커서로 쿼리 결과의 한 행을 가리키고 있다.
 
-때문에 
+때문에 추후에 설명한 `next()` 따위의 메소드로 커서를 이동시키며 결과값을 가져올 수 있다. 
+
+ResultSet 인터페이스가 하는 일은 크게 세가지로 나눌 수 있다.
+
+* 커서 이동
+
+* 커서가 가리키고 있는 데이터 가져오기
+
+* 커서가 가리키고 있는 데이터 업데이트 하기. 원본 데이터의 업데이트 가능
+  
+  
+  
+
+앞서 설명한 Statement 를 통해 쿼리를 실행시키고, ResultSet을 얻을 수 있는데,
+
+이 Statement를 생성할 때, ResultSet에 대한 옵션을 줄 수 있다.
+
+```
+createStatement(int RSType, int RSConcurrency);
+prepareStatment(string SQL, int RSType, int RSConcurrency);
+prepareCall(String sql, int RSType, int RSConcurrency);
+```
 
 
 
-ResultSet 이 하는 일은 크게 세가지로 나눌 수 있다.
+### ResultSetType
 
-- 
+예제 코드에서 편의를 위해 ResultSetType의 줄임말로 RSType 이라고 명칭했다. 
 
+ResultSetType 엔 아래와 같은 세가지 타입을 줄 수 있다.
 
+|     |     |
+| --- | --- |
+|     |     |
+|     |     |
+|     |     |
 
 #### 출처
 
