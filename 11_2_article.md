@@ -1,44 +1,32 @@
 ## 📢 들어가며
 
-
-
 본 포스팅은 [GeekNews](https://news.hada.io/), [CodeProject](https://www.codeproject.com/script/news/list.aspx) 의 2023년 11월 둘째 주 주요 기사를 요약/정리한 글입니다.
 
 해석/요약엔 ChatGPT, 구글 번역, 파파고를 사용하고 있습니다. 
 
 틀린 정보는 댓글 부탁드립니다 ㅎㅎ
 
-
-
 ## 💡 헤드라인 모아보기
 
 월요일
 
-Kotlin 업그레이드로 K2 컴파일러 베타 버전 출시
+JetBrains, Kotlin 업그레이드 및 K2 컴파일러 베타 버전 출시
 
 일론 머스크의 xAi, 챗봇 AI Grok 발표
 
 마이크로소프트, '과도한' 사용자에게 AI 서비스 제한 경고
 
-
-
-
-
 ## 👁️ 기사 요약 모아보기
 
-### Kotlin 업그레이드로 K2 컴파일러 베타 버전 출시
+### JetBrains, Kotlin 업그레이드 및 K2 컴파일러 베타 버전 출시
 
 2023년 10월 31일, JetBrains의 Kotlin 언어 1.9.20 버전이 발표되어 K2 컴파일러가 베타 단계로 업그레이드 됐습니다.
-
-1.9.20 버전은 GitHub에서 코드를 이용할 수 있습니다.
 
  이 버전에서 K2 컴파일러는 이제 JVM, 네이티브, JavaScript 및 WebAssembly를 포함한 모든 플랫폼에서 베타 버전으로 사용할 수 있게 되었습니다. 
 
  K2 컴파일러는 Kotlin 프로그래밍 언어를 대상 플랫폼으로 컴파일하는 데 사용되는 공식 컴파일러입니다. 
 
 [원본 기사]([What's new in Kotlin 1.9.20 | Kotlin Documentation](https://kotlinlang.org/docs/whatsnew1920.html))
-
-
 
 ### 일론 머스크의 x.Ai, 챗봇 AI Grok 발표
 
@@ -58,8 +46,6 @@ ChatGPT-3.5 를 능가하는 LLM(거대언어모델 또는 훈련된 인공지�
 
 [원본 기사](https://x.ai/)
 
-
-
 ### 마이크로소프트, '과도한' 사용자에게 AI 서비스를 제한 경고
 
 2023년 11월 1일, 마이크로소프트는 온라인 서비스의 이용 약관을 변경하여 "과도한" AI 서비스 사용자는 액세스가 제한될 수 있다는 경고를 포함시켰습니다. 
@@ -73,7 +59,3 @@ ChatGPT-3.5 를 능가하는 LLM(거대언어모델 또는 훈련된 인공지�
 마이크로소프트는 GitHub의 AI Copilot에서 이미 손실을 보고 있다고 보고했기 때문입니다. 
 
 [원본 기사]([Microsoft to throttle Gen AI services for 'excessive' users • The Register](https://www.theregister.com/2023/11/02/microsoft_generative_ai_throttling/))
-
-
-
-
