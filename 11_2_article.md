@@ -132,3 +132,5 @@ ChatGPT Enterprise의 커스텀 버전으로 비즈니스에 맞는 GPT를 만�
 CLion Nova는 ReSharper C++/Rider C++ 언어 엔진을 사용하여 기존 CLion 엔진 대신 구축되었다.
 2024년에 CLion Nova가 CLion에 통합될 예정이며, 그 전까지는 무료로 사용 가능하고 기존 CLion과 병렬로 설치할 수 있다.
 CLion Nova는 기존 CLion보다 더 빠르고 반응이 뛰어나며 성능이 향상되었다.
+
+[원본 기사](https://blog.jetbrains.com/clion/2023/11/clion-nova/)
