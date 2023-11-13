@@ -1,13 +1,25 @@
-월요일 code Project
+## 📢 들어가며
 
-https://www.theverge.com/2023/11/9/23953901/humane-ai-pin-launch-date-price-openai
+본 포스팅은 [GeekNews](https://news.hada.io/), [CodeProject](https://www.codeproject.com/script/news/list.aspx) 의 2023년 11월 둘째 주 주요 기사를 요약/정리한 글입니다.
 
-https://www.cnbc.com/2023/11/08/microsoft-launches-github-copilot-enterprise-to-help-with-private-code.html
+## 💡 헤드라인 모아보기
 
-월요일 GeekNews
+📰 Google Play의 새로운 개인 개발자는 앱 출시에 20명 이상의 테스터가 2주이상 앱을 테스트해줘야 배포 가능해진다.
 
-Copilot이 GitHub을 AI기반 개발자 플랫폼으로 만들 것 
-https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/
+📰 Microsoft의 GitHub, 회사의 개인 코드에 대해 배울 수 있는 Copilot 도우미 발표
+
+📰 Humane, OpenAI 기반 웨어러블 AI Pin 공식 출시
+
+## 👁️ 기사 요약 모아보기
+
+### Google Play의 새로운 개인 개발자는 앱 출시에 20명 이상의 테스터가 2주이상 앱을 테스트해줘야 배포 가능해진다.
+
+https://news.hada.io/topic?id=11813
+
+[원본 기사](https://support.google.com/googleplay/android-developer/answer/14151465?hl=ko)
+
+### Copilot이 GitHub을 AI기반 개발자 플랫폼으로 만들 것이라고 발표
+
 "GitHub가 Git을 기반으로 설립되었듯이, 오늘 우리는 Copilot을 기반으로 다시 설립되었음"
 GitHub Copilot Chat은 2023년 12월에 정식 출시
 GPT-4 모델로 더 정확한 제안과 설명
@@ -51,7 +63,9 @@ AI 기반 개발자 플랫폼에서 모든 것을 하나로 모으기
 모바일 앱을 전 세계에 출시하기 위해 GitHub Actions를 사용하는 5명의 스타트업이든, 수천 명의 개발자로 구성된 대기업이 내부 소스 협업을 개선하기 위해 GitHub Enterprise 및 GitHub 코드스페이스로 마이그레이션하든, 오픈 소스 개발자 그룹이 GitHub에서 다음 디지털 인프라를 공유하든, 우리는 지구상의 모든 개발자가 인류의 발전을 가속화할 수 있도록 혁신하고 있음
 Git의 도입과 GitHub의 탄생이 그랬던 것처럼, 이 다음 시대는 GitHub Copilot의 토대 위에 구축될 것. 그리고 이제 시작에 불과함.
 
+[원본 기사1](https://www.cnbc.com/2023/11/08/microsoft-launches-github-copilot-enterprise-to-help-with-private-code.html)
+[원본 기사2](https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/)
 
-Google Play의 새로운 개인 개발자는 앱 출시에 20명 이상의 테스터가 2주이상 앱을 테스트해줘야 배포 가능
-https://support.google.com/googleplay/android-developer/answer/14151465?hl=ko
-https://news.hada.io/topic?id=11813
+### Humane, OpenAI 기반 웨어러블 AI Pin 공식 출시
+
+[원본 기사](https://www.theverge.com/2023/11/9/23953901/humane-ai-pin-launch-date-price-openai)
