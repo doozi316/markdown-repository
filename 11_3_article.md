@@ -8,13 +8,26 @@
 
 📰 Microsoft의 GitHub, 회사의 개인 코드에 대해 배울 수 있는 Copilot 도우미 발표
 
+📰 Microsoft, Windows Server 2022로 전환할 수 있도록 Windows Server 2012 수명선을 확장
+
+📰 Microsoft, .NET 8 발표 및 Visual Studio 17.8 업데이트
+
+📰 Microsoft, 새로운 Forms Windows 11 앱 출시 
+
 📰 Humane, OpenAI 기반 웨어러블 AI Pin 공식 출시
 
 📰 Intel, 다운폴(Downfall) CPU 취약점에 대해 알고 있었지만 5년 동안 아무 조치도 취하지 않았다는 이유로 집단 소송 당해
 
-📰 Microsoft, Windows Server 2022로 전환할 수 있도록 Windows Server 2012 수명선을 확장
-
 📰 Angular.dev 및 Angular 17 버전 출시
+
+📰 구글 측 증인, 사파리 검색 수익의 36%를 애플에 지급했다는 사실을 실수로 폭로
+
+📰 구글, 경쟁사를 짓밟기 위해 DMCA 신고를 무기화한 두 남성 고소
+
+📰 구글 DeepMind, 기상 예보를 위한 AI 모델 GraphCast 소개
+
+📰 Nividia, H200 Tensor Core GPU 릴리즈
+
 
 ## 👁️ 기사 요약 모아보기
 
@@ -72,6 +85,19 @@ Git의 도입과 GitHub의 탄생이 그랬던 것처럼, 이 다음 시대는 G
 [원본 기사1](https://www.cnbc.com/2023/11/08/microsoft-launches-github-copilot-enterprise-to-help-with-private-code.html)
 [원본 기사2](https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/)
 
+### Microsoft, Windows Server 2022로 전환할 수 있도록 Windows Server 2012 수명선을 확장
+
+[원본 기사](https://www.windowscentral.com/software-apps/microsoft-end-support-for-windows-server-2012)
+
+### Microsoft, .NET 8 발표 및 Visual Studio 17.8 업데이트
+
+[원본 기사](https://www.codeproject.com/News/63277/Announcing-NET-8)
+[원본 기사](https://devblogs.microsoft.com/visualstudio/visual-studio-17-8-now-available/)
+
+### Microsoft, 새로운 Forms Windows 11 앱 출시 
+
+[원본 기사](https://www.neowin.net/news/microsoft-launches-the-new-forms-windows-11-app/)
+
 ### Humane, OpenAI 기반 웨어러블 AI Pin 공식 출시
 
 [원본 기사](https://www.theverge.com/2023/11/9/23953901/humane-ai-pin-launch-date-price-openai)
@@ -90,10 +116,100 @@ Git의 도입과 GitHub의 탄생이 그랬던 것처럼, 이 다음 시대는 G
 
 [원본 기사](https://www.techspot.com/news/100814-intel-knew-about-downfall-cpu-vulnerability-but-did.html)
 
-### Microsoft, Windows Server 2022로 전환할 수 있도록 Windows Server 2012 수명선을 확장
-
-[원본 기사](https://www.windowscentral.com/software-apps/microsoft-end-support-for-windows-server-2012)
 
 ### Angular.dev 및 Angular 17 버전 출시
 
 [원본 기사](https://www.telerik.com/blogs/angular-dev-version-17-told-you-renaissance-here)
+
+### 구글 측 증인, 사파리 검색 수익의 36%를 애플에 지급했다는 사실을 실수로 폭로
+
+수익 배분 금액은 기밀이지만, 반독점 재판에서 구글측 증인이 숫자를 공개했음
+"구글은 사파리 브라우저를 통해 얻은 검색 광고 수익의 36%를 애플에 지불중"
+시카고 대학교 교수인 케빈 머피(알파벳쪽 경제 전문가)는 워싱턴에서 열린 법무부의 반독점 재판에서 구글을 변호하는 증언을 하면서 이 수치를 공개
+구글의 주요 소송 담당자인 존 슈미들린은 머피가 기밀로 유지되어야 할 이 숫자를 말하자 눈에 띄게 움찔하는 모습을 보임
+구글과 애플은 모두 계약에 대한 세부 사항을 공개하는 것에 반대
+지난주 법원에 제출한 서류에서 Google은 계약에 대한 추가 정보를 공개하면 "경쟁사 및 기타 상대방과의 관계에서 Google의 경쟁적 지위가 부당하게 약화될 수 있다"고 주장
+양사는 2002년부터 파트너십을 맺어 Google을 Apple Safari의 기본 검색 엔진으로 사용중
+이 계약은 미국에서 가장 많이 사용되는 스마트폰인 iPhone의 검색 엔진을 설정하기 때문에 오늘날 Google의 기본 계약 중 가장 중요한 계약
+법무부는 이 계약을 Google이 검색 엔진 및 검색 광고 시장에서 불법적으로 지배력을 유지하고 있다는 증거로 삼고 있음
+Apple은 코멘트 요청에 즉시 응답하지 않았고, 구글은 코멘트를 거부
+
+[원본 기사](https://www.bloomberg.com/news/articles/2023-11-13/apple-gets-36-of-google-revenue-from-search-deal-witness-says)
+[원본 기사](https://arstechnica.com/tech-policy/2023/11/google-witness-accidentally-blurts-out-that-apple-gets-36-cut-of-safari-deal/)
+
+### 구글, 경쟁사를 짓밟기 위해 DMCA 신고를 무기화한 두 남성을 고소
+
+구글, DMCA 남용으로 경쟁자 피해 주는 이들 고소
+구글이 캘리포니아에서 두 명의 남성을 고소함. 이들은 65개의 구글 계정을 사용하여 최대 620,000개의 URL을 대상으로 한 가짜 저작권 삭제 요청(DMCA)을 구글에 보냄.
+이러한 행위는 경쟁업체의 거래를 방해하고 구글의 비즈니스 및 고객들에게 피해를 주는 것으로, 구글은 이제 충분하다는 메시지를 보내고자 소송을 제기함.
+피고인들, DMCA 삭제 요청을 무기화
+구글의 고소장은 베트남 거주자로 추정되는 Nguyen Van Duc과 Pham Van Thien을 대상으로 함. 이들은 경쟁업체의 웹사이트 URL을 구글 검색 결과에서 제거하기 위해 가짜 저작권 삭제 요청을 시스템적으로 남용함.
+이들은 최소 65개의 구글 계정을 만들어 117,000개의 URL을 대상으로 확인된 가짜 통지를 보내고, 구글이 의심하는 추가적인 500,000개의 URL에 대해서도 통지함.
+피고인들은 티셔츠를 판매하는 웹사이트와 연결되어 있으며, 구글의 정책과 DMCA 삭제 절차를 악용하여 경쟁업체를 해치려는 목적으로 행동함.
+구글, 남용 종식 및 피고인들에게 책임 묻기 위해 노력
+구글은 매년 6억 개의 URL을 대상으로 하는 DMCA 통지를 처리하는 주요 중개자로서, 저작권 침해로 알려진 콘텐츠를 신속하게 제거하거나 비활성화할 의무가 있음.
+가짜 DMCA 통지로 인해 콘텐츠가 잘못 삭제될 수 있으며, 이는 구글의 검색 엔진 광고 비즈니스와 고객들이 기대하는 비즈니스에 피해를 줌.
+피고인들은 구글의 시스템과 DMCA 삭제 절차를 악용하여 경쟁업체를 약화시키는 캠페인을 벌임.
+가짜 이름, 사기성 표현
+구글에 보낸 가짜 DMCA 신고서는 다른 당사자들에게도 피해를 줄 수 있음.
+피고인들은 아마존, 트위터, NBC 뉴스 등 대기업과 필라델피아 이글스, 로스앤젤레스 레이커스, 샌디에이고 파드리스 등 스포츠 팀을 대표한다고 거짓 주장함.
+또한 엘론 머스크, 테일러 스위프트, 르바 버튼, 카니예 웨스트 등 유명 인사들을 대표한다고 거짓으로 주장함.
+구글은 이들이 베트남에서 자신들의 'SEO' 계획을 자랑스럽게 홍보하고 있으며, 이는 구글 검색 결과에서 경쟁업체의 웹사이트와 제품을 부당하게 억제하는 전략임을 지적함.
+피고인들에게 책임 묻기
+DMCA 통지서에서 고의로 거짓 진술을 한 사람은 손해, 비용, 변호사 수임료에 대해 책임을 질 수 있음.
+피고인들의 행위로 인해 구글은 광고 수익 손실, 비즈니스 관계 손상, 그리고 그들의 잘못을 조사하기 위한 상당한 자원 할당으로 경제적 피해를 입음.
+구글은 변호사 수임료와 손해 배상을 요구하며, 피고인들이 구글과의 계약을 위반하고 구글과 광고 고객 간의 계약 관계를 고의로 방해했다고 주장함.
+구글은 또한 피고인들이 더 이상 가짜 삭제 통지를 제출하거나 Gmail 계정을 생성하지 못하도록 명령을 요청하며, 구글의 제품이나 서비스를 사용하여 웹사이트나 제품을 광고하는 것을 금지하길 원함.
+GN⁺의 의견
+이 기사에서 가장 중요한 것은 구글이 DMCA 저작권 삭제 요청 시스템을 악용하여 경쟁업체에 피해를 주는 행위에 대해 법적 조치를 취하고 있다는 점이다. 이러한 소송은 온라인 비즈니스 환경에서 공정한 경쟁을 유지하고자 하는 구글의 의지를 보여주며, 저작권 법의 남용을 방지하기 위한 중요한 전환점이 될 수 있다. 이 소식은 디지털 저작권 관리와 온라인 비즈니스 운영에 관심이 있는 사람들에게 흥미로운 주제가 될 것이다.
+
+[원본 기사](https://torrentfreak.com/google-sues-men-who-weaponized-dmca-notices-to-crush-competition-231114/)
+
+### Nividia, H200 Tensor Core GPU 릴리즈
+
+세계에서 가장 강력한 GPU
+NVIDIA H200 Tensor Core GPU는 게임을 바꾸는 성능과 메모리 능력으로 생성 AI와 고성능 컴퓨팅(HPC) 워크로드를 가속화함.
+HBM3e를 탑재한 첫 번째 GPU로서, H200은 생성 AI와 대규모 언어 모델(LLMs)의 가속화와 과학 컴퓨팅을 위한 HPC 워크로드를 발전시킴.
+NVIDIA Hopper 아키텍처 기반의 성능 향상
+NVIDIA Hopper™ 아키텍처를 기반으로 한 NVIDIA HGX H200은 대규모 데이터를 처리하기 위한 고급 메모리를 갖춘 NVIDIA H200 Tensor Core GPU를 특징으로 함.
+성능 향상의 경험
+Llama2 70B 추론은 1.9배 빨라지고, GPT-3 175B 추론은 1.6배 빨라짐.
+고성능 컴퓨팅은 CPU 대비 최대 110배 빨라짐.
+더 높은 성능과 더 크고 빠른 메모리
+NVIDIA H200은 141GB의 HBM3e 메모리와 4.8TB/s의 메모리 대역폭을 제공하여 생성 AI와 LLMs를 가속화하고, 에너지 효율성을 높이며, 소유 총 비용을 낮춤.
+고성능 LLM 추론으로 통찰력 얻기
+AI 추론 가속기는 대규모 사용자 기반에 배포될 때 최고의 처리량과 최저 TCO를 제공해야 함.
+H200은 LLMs 처리 시 H100 GPU 대비 최대 2배 빠른 추론 속도를 제공함.
+고성능 컴퓨팅 가속화
+메모리 대역폭은 HPC 애플리케이션에 중요하며, 더 빠른 데이터 전송을 가능하게 하여 복잡한 처리 병목 현상을 줄임.
+H200의 높은 메모리 대역폭은 데이터 접근과 조작을 효율적으로 만들어 CPU 대비 최대 110배 빠른 결과 도출을 가능하게 함.
+에너지 및 TCO 절감
+H200 도입으로 에너지 효율성과 TCO가 새로운 수준에 도달함.
+같은 전력 프로파일 내에서 뛰어난 성능을 제공하며, 더 친환경적이고 경제적인 이점을 제공함.
+성능
+NVIDIA Hopper 아키텍처는 전례 없는 성능 향상을 제공하며, H100에 대한 지속적인 소프트웨어 개선을 통해 성능 기준을 계속 높임.
+H200의 도입은 더 많은 성능 향상을 이어가며, 지원되는 소프트웨어에 대한 지속적인 개선을 통해 현재와 미래의 성능 리더십을 보장함.
+기업 준비 완료: AI 소프트웨어가 개발 및 배포 간소화
+NVIDIA AI Enterprise와 함께하는 NVIDIA H200은 AI 준비 플랫폼 구축을 단순화하고, 생성 AI, 컴퓨터 비전, 음성 AI 등의 AI 개발 및 배포를 가속화함.
+이들은 기업급 보안, 관리성, 안정성 및 지원을 제공하여 더 빠르게 실행 가능한 통찰력을 얻고, 더 빨리 구체적인 비즈니스 가치를 달성할 수 있게 함.
+NVIDIA H200 Tensor Core GPU 사양
+형태: H200 SXM
+FP64: 34 TFLOPS
+FP64 Tensor Core: 67 TFLOPS
+FP32: 67 TFLOPS
+TF32 Tensor Core: 989 TFLOPS
+BFLOAT16 Tensor Core: 1,979 TFLOPS
+FP16 Tensor Core: 1,979 TFLOPS
+FP8 Tensor Core: 3,958 TFLOPS
+INT8 Tensor Core: 3,958 TFLOPS
+GPU 메모리: 141GB
+GPU 메모리 대역폭: 4.8TB/s
+디코더: 7 NVDEC
+최대 열 설계 전력(TDP): 최대 700W (설정 가능)
+멀티 인스턴스 GPU: 최대 7 MIGs @16.5GB 각각
+GN⁺의 의견
+이 기사에서 가장 중요한 것은 NVIDIA가 H200 Tensor Core GPU를 통해 AI와 HPC 워크로드를 위한 세계에서 가장 강력한 GPU를 선보였다는 점이다. 이 GPU는 생성 AI와 대규모 언어 모델의 가속화뿐만 아니라 과학 컴퓨팅을 위한 HPC 워크로드의 발전에 기여할 것으로 기대된다. 이러한 기술적 진보는 초급 소프트웨어 엔지니어들에게도 흥미로울 것이며, 그들이 참여하는 프로젝트에 혁신적인 변화를 가져올 수 있는 잠재력을 가지고 있다. H200의 고급 메모리와 처리 능력은 더 빠른 연산, 향상된 에너지 효율성, 그리고 낮은 TCO를 가능하게 하여, AI와 과학 연구 분야의 발전을 가속화할 것으로 예상된다.
+
+[원본 기사](https://news.hada.io/topic?id=11858)
+
+
