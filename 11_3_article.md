@@ -1,215 +1,177 @@
 ## 📢 들어가며
 
-본 포스팅은 [GeekNews](https://news.hada.io/), [CodeProject](https://www.codeproject.com/script/news/list.aspx) 의 2023년 11월 둘째 주 주요 기사를 요약/정리한 글입니다.
+본 포스팅은 [GeekNews](https://news.hada.io/), [CodeProject](https://www.codeproject.com/script/news/list.aspx) 의 2023년 11월 셋째 주 주요 기사를 요약/정리한 글입니다.
 
 ## 💡 헤드라인 모아보기
 
 📰 Google Play의 새로운 개인 개발자는 앱 출시에 20명 이상의 테스터가 2주이상 앱을 테스트해줘야 배포 가능해진다.
 
-📰 Microsoft의 GitHub, 회사의 개인 코드에 대해 배울 수 있는 Copilot 도우미 발표
-
-📰 Microsoft, Windows Server 2022로 전환할 수 있도록 Windows Server 2012 수명선을 확장
-
-📰 Microsoft, .NET 8 발표 및 Visual Studio 17.8 업데이트
-
-📰 Microsoft, 새로운 Forms Windows 11 앱 출시 
-
-📰 Humane, OpenAI 기반 웨어러블 AI Pin 공식 출시
-
-📰 Intel, 다운폴(Downfall) CPU 취약점에 대해 알고 있었지만 5년 동안 아무 조치도 취하지 않았다는 이유로 집단 소송 당해
-
-📰 Angular.dev 및 Angular 17 버전 출시
-
 📰 구글 측 증인, 사파리 검색 수익의 36%를 애플에 지급했다는 사실을 실수로 폭로
 
-📰 구글, 경쟁사를 짓밟기 위해 DMCA 신고를 무기화한 두 남성 고소
+📰 구글 DeepMind, AI 음악 생성 모델 Lyria 공개
 
 📰 구글 DeepMind, 기상 예보를 위한 AI 모델 GraphCast 소개
 
 📰 Nividia, H200 Tensor Core GPU 릴리즈
 
+📰 OpenAI, CEO 샘 알트먼을 내보내기로 결정
+
+📰 애플, 내년 아이폰에 RCS 지원 도입 발표
+
+📰 Angular.dev 및 Angular 17 버전 출시
+
+📰 GitHub, GitHub Copilot Chat, GitHub Copilot Enterprise 등 발표
 
 ## 👁️ 기사 요약 모아보기
 
 ### Google Play의 새로운 개인 개발자는 앱 출시에 20명 이상의 테스터가 2주이상 앱을 테스트해줘야 배포 가능해진다.
 
-https://news.hada.io/topic?id=11813
+2023년 11월부터 Google Play에 새로운 앱을 게시하는 개인 계정 개발자는 새로운 테스트 요구사항을 충족해야 한다.  
+14일 이상 지속적으로 20명 이상의 테스터를 대상으로 비공개 테스트를 진행해야 한다.  
+비공개 테스트는 개발자가 관리하는 사용자 그룹과 공유하여 앱의 문제를 식별하고 Google Play 정책을 준수하는지 확인하는 과정이다.  
+테스트를 성공적으로 마치면 Play Console의 대시보드에서 프로덕션 액세스를 신청할 수 있다.
 
 [원본 기사](https://support.google.com/googleplay/android-developer/answer/14151465?hl=ko)
 
-### Copilot이 GitHub을 AI기반 개발자 플랫폼으로 만들 것이라고 발표
-
-"GitHub가 Git을 기반으로 설립되었듯이, 오늘 우리는 Copilot을 기반으로 다시 설립되었음"
-GitHub Copilot Chat은 2023년 12월에 정식 출시
-GPT-4 모델로 더 정확한 제안과 설명
-당신의 코드를 컨텍스트로 사용하여 복잡한 컨셉을 설명하거나 열린 파일 기반으로 코드를 제안, 보안 취약점 감지를 도와주거나 에러를 찾는 것을 도와줌
-인라인 Copilot Chat 으로 특정 라인에 대해서 채팅 가능
-슬래시 명령을 도입 : /fix 로 코드를 수정, /tests 로 테스트를 생성
-클릭 한번으로 AI의 강력한 기능을 적용
-JetBrains 기반 IDE들에도 Copilot Chat 적용(프리뷰 오늘부터 시작)
-GitHub Copilot Chat이 깃헙 웹사이트와 모바일앱에도 도입
-웹에서도 코드, 풀 리퀘스트, 문서 및 일반적인 코딩 관련 질문에 대해 제안, 요약, 분석 및 답변을 제공
-고급 코드 검색 기능과 결합하여 Copilot Chat이 인기 있는 오픈 소스 프로젝트의 최신 변경 사항을 이해하고 지원할 수 있도록 도와줌
-iPhone 및 Android 기기에서 자연어로 모든 프로그래밍 질문을 할 수 있고, 앱에서 보고 있는 리포지토리, 파일 또는 문서에 대한 답변을 얻을 수 있음
-GitHub Copilot Enterprise 공개 : 조직에 맞게 맞춤화된 Copilot
-에디터에 그치지 않고 전체 코드베이스의 전체 컨텍스트에 맞춰 개인화 됨
-개발자 팀이 코드베이스를 빠르게 파악하고, 문서를 검색 및 작성하고, 내부 및 비공개 코드를 기반으로 제안을 받고, 풀 리퀘스트를 빠르게 검토할 수 있음
-2024년 2월에 사용자당 월 39달러에 정식 출시될 예정
-GitHub Copilot 파트너 프로그램을 통한 Copilot 기반 에코시스템 육성
-타사 개발자 도구, 온라인 서비스 및 GitHub 외부의 지식과 통합하여 GitHub Copilot을 더욱 강화할 것
-GitHub Copilot 파트너 프로그램은 새로운 네트워크와 독창성이 GitHub Copilot에 주입될 수 있는 생태계를 조성하여 개발자가 AI로 달성할 수 있는 범위를 넓힐 것
-Datastax, LaunchDarkly, Postman, Hashicorp, Datadog 등 25개 이상의 데뷔 파트너와 함께 이 프로그램의 첫 번째 단계를 시작
-GitHub Advanced Security에서 사용할 수 있는 새로운 AI 기반 보안 기능
-현재 GitHub Copilot은 안전하지 않은 코딩 패턴을 실시간으로 차단하는 LLM 기반 취약성 방지 시스템을 적용하여 GitHub Copilot의 제안을 더욱 안전하게 만듦
-이 모델은 하드코딩된 자격 증명, SQL 삽입, 경로 삽입 등 가장 일반적인 취약한 코딩 패턴을 대상으로 함
-또한 GitHub Copilot Chat은 IDE의 보안 취약점을 식별하고, 자연어 기능을 통해 취약점의 메커니즘을 설명하며, 강조 표시된 코드에 대한 구체적인 수정 사항을 제안할 수 있음
-이제 코드의 취약점과 비밀을 감지하고 수정하도록 설계된 새로운 "AI 기반 애플리케이션 보안 테스트 기능"을 GitHub Advanced Security에 추가
-"코드 스캔 자동 수정" 으로 풀 리퀘스트에서 직접 JavaScript 및 TypeScript용 CodeQL을 사용하여 AI가 생성한 수정 사항을 제안하여 개발자가 문제를 더 빠르게 해결하고 코드베이스에 새로운 취약점이 도입되는 것을 줄임
-또한 일반 시크릿에 대한 AI 시크릿 스캔과 사용자 지정 패턴에 대한 새로운 정규식 생성기를 통해 낮은 오탐률로 유출된 시크릿을 더 쉽게 찾을 수 있음
-GitHub Copilot Workspace 출시 예정
-개발자에게 가장 큰 장벽은 아이디어를 코드로 전환하고 풀 리퀘스트에 이르는 데 필요한 계획을 생성하는 것부터 시작되는 경우가 많음
-많은 아이디어와 버그는 GitHub 이슈에서 시작됨
-이슈의 세부 사항과 코드베이스에 대한 지식, GPT-4의 추론 기능을 결합하여 모든 개발자가 아이디어를 코드로 전환하는 장벽을 넘을 수 있도록 지원하는 AI 기반 브릿지를 개발
-Copilot 워크스페이스에서 이슈를 열면 의도한 변경 사항을 구현하는 방법에 대한 계획이 자동으로 제안됨
-워크스페이스는 완전히 편집할 수 있으므로 이슈의 의도와 전체 코드베이스를 이해하는 AI의 이점을 활용하면서 원하는 방향으로 AI를 정확하게 조정할 수 있음
-변경 사항이 예상대로 작동하는지 검증하기 위해 Copilot Workspace를 사용하면 코드를 빌드, 실행 및 테스트할 수 있음
-또한 오류가 발생하면 자동으로 오류를 수정할 수 있음
-Copilot Workspace는 프로젝트의 모든 부분을 잘 알고 있는 파트너와의 페어 프로그래밍 세션과 같으며, AI의 강력한 기능을 통해 이슈부터 풀 리퀘스트까지 리포지토리 전반을 변경할 수 있도록 리드를 따를 수 있음
-2024년에 Copilot Workspace가 제공되면 개발자가 AI를 제2의 두뇌로 사용하여 자연어를 통해 몇 분 만에 창의력을 발휘할 수 있는 시대로 한 단계 더 도약하게 될 것
-AI 기반 개발자 플랫폼에서 모든 것을 하나로 모으기
-인간과 인공 지능의 교차점은 플랫폼 전반에 걸쳐 미래 세대의 GitHub Copilot을 계속 정의할 것
-우리가 발표하는 모든 것은 개발자가 무엇을 구축하든 상관없이 개발자에게 총체적이고 생산적이며 원활한 AI 기반 개발자 플랫폼을 제공한다는 한 가지에 초점을 맞추고 있음
-모바일 앱을 전 세계에 출시하기 위해 GitHub Actions를 사용하는 5명의 스타트업이든, 수천 명의 개발자로 구성된 대기업이 내부 소스 협업을 개선하기 위해 GitHub Enterprise 및 GitHub 코드스페이스로 마이그레이션하든, 오픈 소스 개발자 그룹이 GitHub에서 다음 디지털 인프라를 공유하든, 우리는 지구상의 모든 개발자가 인류의 발전을 가속화할 수 있도록 혁신하고 있음
-Git의 도입과 GitHub의 탄생이 그랬던 것처럼, 이 다음 시대는 GitHub Copilot의 토대 위에 구축될 것. 그리고 이제 시작에 불과함.
-
-[원본 기사1](https://www.cnbc.com/2023/11/08/microsoft-launches-github-copilot-enterprise-to-help-with-private-code.html)
-[원본 기사2](https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/)
-
-### Microsoft, Windows Server 2022로 전환할 수 있도록 Windows Server 2012 수명선을 확장
-
-[원본 기사](https://www.windowscentral.com/software-apps/microsoft-end-support-for-windows-server-2012)
-
-### Microsoft, .NET 8 발표 및 Visual Studio 17.8 업데이트
-
-[원본 기사](https://www.codeproject.com/News/63277/Announcing-NET-8)
-[원본 기사](https://devblogs.microsoft.com/visualstudio/visual-studio-17-8-now-available/)
-
-### Microsoft, 새로운 Forms Windows 11 앱 출시 
-
-[원본 기사](https://www.neowin.net/news/microsoft-launches-the-new-forms-windows-11-app/)
-
-### Humane, OpenAI 기반 웨어러블 AI Pin 공식 출시
-
-[원본 기사](https://www.theverge.com/2023/11/9/23953901/humane-ai-pin-launch-date-price-openai)
-
-### Intel, 다운폴(Downfall) CPU 취약점에 대해 알고 있었지만 5년 동안 아무 조치도 취하지 않았다는 이유로 집단 소송 당해
-
-인텔 프로세서의 보안 취약점 중 하나인 "다운폴(Downfall)"은 2018년에 발견되었으나 인텔은 이를 숨기고 취약 제품을 판매한 것으로 주장되는 새로운 집단 소송이 미국 캘리포니아 주 샌호세의 연방 법원에 제기되었습니다.
-
-다운폴(Downfall)은 6세대부터 11세대까지의 소비자용 칩과 1세대부터 4세대까지의 제온 인텔 x86-64 CPU에 영향을 미치는 보안 취약점으로, 모던 인텔 CPU에 존재하는 고급 벡터 익스텐션(Advanced Vector Extensions, AVX) 명령에 영향을 받습니다. 이 취약점은 공격자가 추론적 실행 동안 내부 벡터 레지스터 파일의 내용을 노출시킬 수 있는데, 이를 통해 비밀 사용자 데이터가 노출될 수 있습니다.
-
-이 소송의 원고들은 2018년에 두 차례에 걸쳐 다운폴 취약점에 대한 보고서를 인텔에 알렸다고 주장하며, 그 당시 인텔은 스펙터(Spectre)와 멜트다운(Meltdown) 취약점을 다루느라 바빴기 때문에 AVX 명령의 다운폴 취약점을 놓쳤다고 주장합니다. 나중에 인텔이 릴리스한 마이크로코드 업데이트로 인해 특정 "보통의 컴퓨팅 작업"에서 CPU 성능이 최대 50%까지 감소한다고 소송에서 주장하고 있습니다.
-
-현재 많은 사람들이 사용하는 인텔 CPU는 이 다운폴 취약점 때문에 공격에 취약하거나 다운폴 취약점을 해결하기 위해 성능이 눈에 띄게 감소한 제품이 되었다고 주장하고 있습니다. 이러한 제품은 소송에서 주장하는 바에 따르면 소유자가 구매한 제품과는 "다르게 작동"하며 가치가 현저히 낮아졌다고 주장하고 있습니다.
-
-인텔은 다운폴을 해결하지 않은 채로 x86 칩의 세 세대에 걸쳐 문제를 해결하지 않았으며, 이로 인해 포토 및 비디오 편집, 게임 및 암호화 소프트웨어를 사용하는 고객들이 인텔의 태만한 태도의 대가로 지금까지 지불해야 하게 되었다고 주장하고 있습니다. 소송은 또한 인텔이 AVX 결함 명령과 관련된 몇 가지 "비밀 버퍼"를 구현했지만 이 존재를 공개하지 않았다고 주장하고 있습니다. 이러한 비밀 버퍼는 인텔 CPU에서 백도어로 작용했을 것이며, 공격자가 RAM에 저장된 민감한 정보를 얻을 수 있었을 것입니다. 현재까지 인텔은 이 소송에 대한 댓글을 거부하고 있습니다.
-
-[원본 기사](https://www.techspot.com/news/100814-intel-knew-about-downfall-cpu-vulnerability-but-did.html)
-
-
-### Angular.dev 및 Angular 17 버전 출시
-
-[원본 기사](https://www.telerik.com/blogs/angular-dev-version-17-told-you-renaissance-here)
-
 ### 구글 측 증인, 사파리 검색 수익의 36%를 애플에 지급했다는 사실을 실수로 폭로
 
-수익 배분 금액은 기밀이지만, 반독점 재판에서 구글측 증인이 숫자를 공개했음
-"구글은 사파리 브라우저를 통해 얻은 검색 광고 수익의 36%를 애플에 지불중"
-시카고 대학교 교수인 케빈 머피(알파벳쪽 경제 전문가)는 워싱턴에서 열린 법무부의 반독점 재판에서 구글을 변호하는 증언을 하면서 이 수치를 공개
-구글의 주요 소송 담당자인 존 슈미들린은 머피가 기밀로 유지되어야 할 이 숫자를 말하자 눈에 띄게 움찔하는 모습을 보임
-구글과 애플은 모두 계약에 대한 세부 사항을 공개하는 것에 반대
-지난주 법원에 제출한 서류에서 Google은 계약에 대한 추가 정보를 공개하면 "경쟁사 및 기타 상대방과의 관계에서 Google의 경쟁적 지위가 부당하게 약화될 수 있다"고 주장
-양사는 2002년부터 파트너십을 맺어 Google을 Apple Safari의 기본 검색 엔진으로 사용중
-이 계약은 미국에서 가장 많이 사용되는 스마트폰인 iPhone의 검색 엔진을 설정하기 때문에 오늘날 Google의 기본 계약 중 가장 중요한 계약
-법무부는 이 계약을 Google이 검색 엔진 및 검색 광고 시장에서 불법적으로 지배력을 유지하고 있다는 증거로 삼고 있음
-Apple은 코멘트 요청에 즉시 응답하지 않았고, 구글은 코멘트를 거부
+시카고 대학교 교수인 케빈 머피(알파벳쪽 경제 전문가)는 워싱턴에서 열린 법무부의 반독점 재판에서 구글을 변호하는 증언을 하면서 기밀인 수익 배분 금액을 공개했다.  
+구체적으론, "구글은 사파리 브라우저를 통해 얻은 검색 광고 수익의 36%를 애플에 지불중" 이라고 밝혔다.  
+구글의 주요 소송 담당자인 존 슈미들린은 머피가 기밀로 유지되어야 할 이 숫자를 말하자 눈에 띄게 움찔하는 모습을 보였다.  
+이 계약은 미국에서 가장 많이 사용되는 스마트폰인 iPhone의 검색 엔진을 설정하기 때문에 오늘날 Google의 기본 계약 중 가장 중요한 계약이다.  
+법무부는 이 계약을 Google이 검색 엔진 및 검색 광고 시장에서 불법적으로 지배력을 유지하고 있다는 증거로 삼고 있다.  
+Apple은 코멘트 요청에 즉시 응답하지 않았고, 구글은 코멘트를 거부했다.
 
-[원본 기사](https://www.bloomberg.com/news/articles/2023-11-13/apple-gets-36-of-google-revenue-from-search-deal-witness-says)
+[원본 기사](https://www.bloomberg.com/news/articles/2023-11-13/apple-gets-36-of-google-revenue-from-search-deal-witness-says)  
 [원본 기사](https://arstechnica.com/tech-policy/2023/11/google-witness-accidentally-blurts-out-that-apple-gets-36-cut-of-safari-deal/)
 
-### 구글, 경쟁사를 짓밟기 위해 DMCA 신고를 무기화한 두 남성을 고소
+### 구글 DeepMind, AI 음악 생성 모델 Lyria 공개
 
-구글, DMCA 남용으로 경쟁자 피해 주는 이들 고소
-구글이 캘리포니아에서 두 명의 남성을 고소함. 이들은 65개의 구글 계정을 사용하여 최대 620,000개의 URL을 대상으로 한 가짜 저작권 삭제 요청(DMCA)을 구글에 보냄.
-이러한 행위는 경쟁업체의 거래를 방해하고 구글의 비즈니스 및 고객들에게 피해를 주는 것으로, 구글은 이제 충분하다는 메시지를 보내고자 소송을 제기함.
-피고인들, DMCA 삭제 요청을 무기화
-구글의 고소장은 베트남 거주자로 추정되는 Nguyen Van Duc과 Pham Van Thien을 대상으로 함. 이들은 경쟁업체의 웹사이트 URL을 구글 검색 결과에서 제거하기 위해 가짜 저작권 삭제 요청을 시스템적으로 남용함.
-이들은 최소 65개의 구글 계정을 만들어 117,000개의 URL을 대상으로 확인된 가짜 통지를 보내고, 구글이 의심하는 추가적인 500,000개의 URL에 대해서도 통지함.
-피고인들은 티셔츠를 판매하는 웹사이트와 연결되어 있으며, 구글의 정책과 DMCA 삭제 절차를 악용하여 경쟁업체를 해치려는 목적으로 행동함.
-구글, 남용 종식 및 피고인들에게 책임 묻기 위해 노력
-구글은 매년 6억 개의 URL을 대상으로 하는 DMCA 통지를 처리하는 주요 중개자로서, 저작권 침해로 알려진 콘텐츠를 신속하게 제거하거나 비활성화할 의무가 있음.
-가짜 DMCA 통지로 인해 콘텐츠가 잘못 삭제될 수 있으며, 이는 구글의 검색 엔진 광고 비즈니스와 고객들이 기대하는 비즈니스에 피해를 줌.
-피고인들은 구글의 시스템과 DMCA 삭제 절차를 악용하여 경쟁업체를 약화시키는 캠페인을 벌임.
-가짜 이름, 사기성 표현
-구글에 보낸 가짜 DMCA 신고서는 다른 당사자들에게도 피해를 줄 수 있음.
-피고인들은 아마존, 트위터, NBC 뉴스 등 대기업과 필라델피아 이글스, 로스앤젤레스 레이커스, 샌디에이고 파드리스 등 스포츠 팀을 대표한다고 거짓 주장함.
-또한 엘론 머스크, 테일러 스위프트, 르바 버튼, 카니예 웨스트 등 유명 인사들을 대표한다고 거짓으로 주장함.
-구글은 이들이 베트남에서 자신들의 'SEO' 계획을 자랑스럽게 홍보하고 있으며, 이는 구글 검색 결과에서 경쟁업체의 웹사이트와 제품을 부당하게 억제하는 전략임을 지적함.
-피고인들에게 책임 묻기
-DMCA 통지서에서 고의로 거짓 진술을 한 사람은 손해, 비용, 변호사 수임료에 대해 책임을 질 수 있음.
-피고인들의 행위로 인해 구글은 광고 수익 손실, 비즈니스 관계 손상, 그리고 그들의 잘못을 조사하기 위한 상당한 자원 할당으로 경제적 피해를 입음.
-구글은 변호사 수임료와 손해 배상을 요구하며, 피고인들이 구글과의 계약을 위반하고 구글과 광고 고객 간의 계약 관계를 고의로 방해했다고 주장함.
-구글은 또한 피고인들이 더 이상 가짜 삭제 통지를 제출하거나 Gmail 계정을 생성하지 못하도록 명령을 요청하며, 구글의 제품이나 서비스를 사용하여 웹사이트나 제품을 광고하는 것을 금지하길 원함.
-GN⁺의 의견
-이 기사에서 가장 중요한 것은 구글이 DMCA 저작권 삭제 요청 시스템을 악용하여 경쟁업체에 피해를 주는 행위에 대해 법적 조치를 취하고 있다는 점이다. 이러한 소송은 온라인 비즈니스 환경에서 공정한 경쟁을 유지하고자 하는 구글의 의지를 보여주며, 저작권 법의 남용을 방지하기 위한 중요한 전환점이 될 수 있다. 이 소식은 디지털 저작권 관리와 온라인 비즈니스 운영에 관심이 있는 사람들에게 흥미로운 주제가 될 것이다.
+11월 16일, 구글 DeepMind는 유튜브와 협업한 AI 음악 생성 모델 Lyria를 공개하고 2가지 AI 실험을 발표했다.
 
-[원본 기사](https://torrentfreak.com/google-sues-men-who-weaponized-dmca-notices-to-crush-competition-231114/)
+**Lyria**  
+악기와 보컬을 사용하여 고품질 음악을 생성하고 변환 및 연속 작업을 수행하는 모델이다.  
+사용자에게 출력 스타일과 성능에 디테일한 제어 기능을 제공하는 데 뛰어나다.
+
+**Dream Track**  
+음악 창작을 통해 아티스트, 크리에이터, 팬 간의 관계를 더욱 돈독히 하기 위해 고안된 YouTube Shorts 실험이다.  
+Alec Benjamin, Charlie Puth, Charli XCX, Demi Lovato, John Legend, Sia를 포함한 아티스트의 AI 생성 음성 및 음악 스타일로 독특한 사운드트랙을 제작 가능하다.  
+주제를 입력하고 캐러셀에서 아티스트를 선택하여 자신의 Shorts 동영상에 대한 30초 사운드트랙을 생성한다.  
+Dream Track은 Lyria 모델을 사용하여 선택한 참여 아티스트의 스타일로 가사, 백킹 트랙 및 AI 생성 음성을 동시에 생성해 준다.
+
+**Music AI Tools**  
+아티스트, 작곡가, 프로듀서의 창작 과정을 강화하는 데 도움이 되는 도구 세트이다.  
+새로운 음악이나 악기 섹션을 만들고, 한 음악 스타일이나 악기에서 다른 음악 스타일이나 악기로 오디오를 변환하고, 악기 및 보컬 반주를 만들 수 있다.  
+멜로디를 불러 호른 라인을 만들고, MIDI 키보드의 코드를 사실적인 성악 합창으로 변환하거나, 보컬 트랙에 악기 반주를 추가하는 것 등이 가능하다.
+
+[원본 기사1](https://www.theverge.com/2023/11/16/23963570/youtube-generative-ai-dream-track-music-tools-voice-clone)  
+[원본 기사2](https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/)
+
+### 구글 DeepMind, 기상 예보를 위한 AI 모델 GraphCast 소개
+
+11월 14일, 구글 DeepMind 는 기상 예보를 위한 AI 모델 GraphCast를 소개했다.  
+GraphCast는 과학 저널에 발표된 최신 AI 모델로, 10일치 기상 예측을 1분 이내에 높은 정확도로 제공한다.  
+기존의 골드 스탠다드인 HRES 시스템보다 빠르고 정확하게 중기 기상 예측을 수행한다.  
+GraphCast는 사이클론의 경로, 홍수 위험과 관련된 대기 강과 극단적인 온도 발생을 예측하여, 극단적 기상 이벤트에 대한 조기 경보를 제공한다.
+
+[원본 기사](https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/)
 
 ### Nividia, H200 Tensor Core GPU 릴리즈
 
-세계에서 가장 강력한 GPU
-NVIDIA H200 Tensor Core GPU는 게임을 바꾸는 성능과 메모리 능력으로 생성 AI와 고성능 컴퓨팅(HPC) 워크로드를 가속화함.
-HBM3e를 탑재한 첫 번째 GPU로서, H200은 생성 AI와 대규모 언어 모델(LLMs)의 가속화와 과학 컴퓨팅을 위한 HPC 워크로드를 발전시킴.
-NVIDIA Hopper 아키텍처 기반의 성능 향상
-NVIDIA Hopper™ 아키텍처를 기반으로 한 NVIDIA HGX H200은 대규모 데이터를 처리하기 위한 고급 메모리를 갖춘 NVIDIA H200 Tensor Core GPU를 특징으로 함.
-성능 향상의 경험
-Llama2 70B 추론은 1.9배 빨라지고, GPT-3 175B 추론은 1.6배 빨라짐.
-고성능 컴퓨팅은 CPU 대비 최대 110배 빨라짐.
-더 높은 성능과 더 크고 빠른 메모리
-NVIDIA H200은 141GB의 HBM3e 메모리와 4.8TB/s의 메모리 대역폭을 제공하여 생성 AI와 LLMs를 가속화하고, 에너지 효율성을 높이며, 소유 총 비용을 낮춤.
-고성능 LLM 추론으로 통찰력 얻기
-AI 추론 가속기는 대규모 사용자 기반에 배포될 때 최고의 처리량과 최저 TCO를 제공해야 함.
-H200은 LLMs 처리 시 H100 GPU 대비 최대 2배 빠른 추론 속도를 제공함.
-고성능 컴퓨팅 가속화
-메모리 대역폭은 HPC 애플리케이션에 중요하며, 더 빠른 데이터 전송을 가능하게 하여 복잡한 처리 병목 현상을 줄임.
-H200의 높은 메모리 대역폭은 데이터 접근과 조작을 효율적으로 만들어 CPU 대비 최대 110배 빠른 결과 도출을 가능하게 함.
-에너지 및 TCO 절감
-H200 도입으로 에너지 효율성과 TCO가 새로운 수준에 도달함.
-같은 전력 프로파일 내에서 뛰어난 성능을 제공하며, 더 친환경적이고 경제적인 이점을 제공함.
-성능
-NVIDIA Hopper 아키텍처는 전례 없는 성능 향상을 제공하며, H100에 대한 지속적인 소프트웨어 개선을 통해 성능 기준을 계속 높임.
-H200의 도입은 더 많은 성능 향상을 이어가며, 지원되는 소프트웨어에 대한 지속적인 개선을 통해 현재와 미래의 성능 리더십을 보장함.
-기업 준비 완료: AI 소프트웨어가 개발 및 배포 간소화
-NVIDIA AI Enterprise와 함께하는 NVIDIA H200은 AI 준비 플랫폼 구축을 단순화하고, 생성 AI, 컴퓨터 비전, 음성 AI 등의 AI 개발 및 배포를 가속화함.
-이들은 기업급 보안, 관리성, 안정성 및 지원을 제공하여 더 빠르게 실행 가능한 통찰력을 얻고, 더 빨리 구체적인 비즈니스 가치를 달성할 수 있게 함.
-NVIDIA H200 Tensor Core GPU 사양
-형태: H200 SXM
-FP64: 34 TFLOPS
-FP64 Tensor Core: 67 TFLOPS
-FP32: 67 TFLOPS
-TF32 Tensor Core: 989 TFLOPS
-BFLOAT16 Tensor Core: 1,979 TFLOPS
-FP16 Tensor Core: 1,979 TFLOPS
-FP8 Tensor Core: 3,958 TFLOPS
-INT8 Tensor Core: 3,958 TFLOPS
-GPU 메모리: 141GB
-GPU 메모리 대역폭: 4.8TB/s
-디코더: 7 NVDEC
-최대 열 설계 전력(TDP): 최대 700W (설정 가능)
-멀티 인스턴스 GPU: 최대 7 MIGs @16.5GB 각각
-GN⁺의 의견
-이 기사에서 가장 중요한 것은 NVIDIA가 H200 Tensor Core GPU를 통해 AI와 HPC 워크로드를 위한 세계에서 가장 강력한 GPU를 선보였다는 점이다. 이 GPU는 생성 AI와 대규모 언어 모델의 가속화뿐만 아니라 과학 컴퓨팅을 위한 HPC 워크로드의 발전에 기여할 것으로 기대된다. 이러한 기술적 진보는 초급 소프트웨어 엔지니어들에게도 흥미로울 것이며, 그들이 참여하는 프로젝트에 혁신적인 변화를 가져올 수 있는 잠재력을 가지고 있다. H200의 고급 메모리와 처리 능력은 더 빠른 연산, 향상된 에너지 효율성, 그리고 낮은 TCO를 가능하게 하여, AI와 과학 연구 분야의 발전을 가속화할 것으로 예상된다.
+Nividia가 H200 Tensor Core GPU를 릴리즈 했다.  
+NVIDIA H200 Tensor Core GPU는 게임을 바꾸는 성능과 메모리 능력으로 생성 AI와 고성능 컴퓨팅(HPC) 워크로드를 가속화한다.  
+HBM3e를 탑재한 첫 번째 GPU로서, H200은 생성 AI와 대규모 언어 모델(LLMs)의 가속화와 과학 컴퓨팅을 위한 HPC 워크로드를 발전시켰다.
 
-[원본 기사](https://news.hada.io/topic?id=11858)
+[원본 기사](https://www.nvidia.com/en-gb/data-center/h200/)
 
+### OpenAI, CEO 샘 알트먼을 내보내기로 결정
 
+11월 17일, OpenAI는 CEO인 샘 알트먼을 내보내기로 결정했다고 밝혔다.  
+OpenAI 이사회는 샘 알트먼이 "일관되게 솔직하게 의사소통하지 않아서" 책임 수행 능력이 저하된다고 결론을 내렸다.  
+미라 무라티 CTO를 임시 CEO로 임명했으며, 후임자를 찾고 있다고 한다.  
+이사회의 대다수는 사외이사이며, 사외 이사는 OpenAI에서 지분을 보유하지 않고 있다.
+
+[원본 기사](https://openai.com/blog/openai-announces-leadership-transition)
+
+### 애플, 내년 아이폰에 RCS 지원 도입 발표
+
+애플이 내년에 아이폰에 RCS(Rich Communication Services) 지원을 추가할 것이라고 발표했다.  
+RCS는 SMS의 후속으로 더 풍부한 텍스트 메시지 기능을 제공하는 통신 프로토콜이다.  
+이 기능은 사용자 간의 멀티미디어 공유, 그룹 채팅, 고화질 음성 통화 등을 가능하게 한다.  
+"내년 말" 소프트웨어 업데이트를 통해 출시될 예정이며 iPhone과 Android 사용자 간의 메시징에 다양한 iMessage 스타일 기능을 제공할 예정이다.  
+iMessage는 별도로 유지하며, 기존의 SMS/MMS 를 대체하는 것이지만 필요하면 SMS/MMS도 계속 사용 가능하다.
+
+[원본 기사](https://9to5mac.com/2023/11/16/apple-rcs-coming-to-iphone/)
+
+### Angular.dev 및 Angular 17 버전 출시
+
+Angular 프레임워크의 17번째 버전이 출시됐다.
+
+-   새로운 룩 앤 필, 로고, 문서
+    -   Angular의 새로운 룩 앤 필, 로고, 그리고 문서가 새롭게 선보여졌다.
+-   새로운 기능 및 개선된 학습 경로
+    -   지연 로딩과 같은 새로운 기능과 개선된 학습 경로가 도입되어 Angular을 사용하기 쉽게 만들어졌다.
+-   angular.dev 웹사이트 업데이트
+    -   angular.dev 웹사이트가 새롭게 업데이트되었으며, 초보자를 위한 구조와 심층 가이드, API 참조 등이 개선되었다.
+-   새로운 제어 흐름 구문
+    -   새로운 제어 흐름 구문이 도입되었으며, 이를 사용하면 Angular의 성능이 90% 향상될 수 있다.
+-   원격로드 기능
+    -   새로운 @defer 구문이 추가되어 지연 로딩을 지원하며, 뷰포트와 같은 트리거 옵션을 통해 로딩을 조절할 수 있다.
+-   CLI 업데이트와 기본 설정 변경
+    -   CLI 업데이트와 함께 몇 가지 ng new 기본 설정이 변경되었다.
+-   서버 사이드 렌더링 및 수분화
+    -   Angular 17에서는 SSR 및 수분화가 개선되어 프로덕션에 안정적으로 사용 가능하게 되었다. 빌드 시스템은 Vite와 esbuild를 사용하며 이로써 이전보다 3배 빠른 SSR 빌드 시간을 제공한다.
+-   새로운 기본 빌드 시스템
+    -   Vite와 esbuild를 사용하는 새로운 빌드 시스템이 도입되었다.
+-   CSS 개선
+    -   CSS를 문자열 리터럴로 받아들이는 등의 CSS 개선 사항
+-   Reactivity(반응성) 업데이트 (Angular 18+에서 예정)
+    -   내장된 반응형 프리미티브인 'signals'가 도입되었으며, 이에 대한 추가 개선이 계획되어 있다.
+-   새로운 브랜드와 로고
+    -   Angular은 새로운 브랜드와 로고를 도입했다.
+-   공식 릴리즈
+    -   Angular 17은 2023년 11월 8일에 npm에서 공식적으로 릴리즈됐다.
+
+[원본 기사](https://www.telerik.com/blogs/angular-dev-version-17-told-you-renaissance-here)
+
+### Copilot, GitHub를 AI 기반 개발자 플랫폼으로 전환
+
+11월 8일, GitHub는 GitHub Copilot Chat의 일반 출시와 새로운 GitHub Copilot Enterprise 제품,  
+새로운 AI 기반 보안 기능 및 GitHub Copilot 파트너 프로그램의 미리 보기를 발표했다.
+
+**GitHub Copilot Chat**은 2023년 12월에 정식 출시된다.  
+GitHub Copilot Chat은 GPT-4 모델로 더 정확한 제안과 설명을 제공한다.  
+인라인 Copilot Chat 으로 특정 라인에 대해서 채팅 가능하다.  
+JetBrains 기반 IDE들에도 Copilot Chat 적용됐다.  
+GitHub Copilot Chat이 깃헙 웹사이트와 모바일앱에도 도입됐다.
+
+조직에 맞춤화된 **GitHub Copilot Enterprise**도 공개했다.  
+2024년 2월에 사용자당 월 39달러에 정식 출시될 예정이다.
+
+2024년, **GitHub Copilot Workspace** 도 공개될 예정이다.  
+Copilot Workspace는 GitHub 이슈와 코드베이스 지식, GPT-4의 추론 능력을 결합하여 아이디어를 코드로 전환하는 데 도움을 준다.  
+GitHub Next 비전의 일환으로, 개발자가 아이디어를 코드로 구현하는 과정을 단순화하는 데 중점을 뒀다.
+
+**GitHub Copilot Partner Program** 라는,  
+GitHub Copilot을 타사 개발 도구, 온라인 서비스, 지식과 통합하여 확장하기 위한 파트너 프로그램이 시작됐다.  
+현재 25개 이상의 파트너가 참여하며, 이를 통해 Copilot이 수행할 수 있는 작업과 사용 사례가 확장될 것이다.
+
+**GitHub Advanced Security**의 새로운 AI 기능이 추가됐다.  
+GitHub Copilot은 새로운 AI 기능을 통해 보안 취약점을 식별하고 수정하는 데 도움을 준다.  
+코드 스캐닝 오토픽스, AI 기반 시크릿 스캐닝 등을 포함하여 새로운 보안 기능을 제공한다.
+
+[원본 기사](https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/)
+
+### Microsoft, .NET 8 발표 및 Visual Studio 17.8 업데이트
+
+11월 14일, Microsoft가 .NET 8 및 Visual Studio 17.8 업데이트를 발표했다.
+
+.NET 8이 최신 LTS(장기 지원) 버전으로 출시되었다.  
+클라우드 네이티브 기능, .NET Aspire, 인공지능 통합, C# 12 기능등이 추가되었고,  
+그 밖에 성능 및 기타 개선사항이 있다.
+
+VisualStudio 17.8 이 업데이트 되었다.  
+최적화된 C++을 지원하고, 향상된 엔터프라이즈 기능 및 완전한 .NET 8 통합을 제공한다.
+
+[원본 기사1](https://www.codeproject.com/News/63277/Announcing-NET-8)  
+[원본 기사2](https://devblogs.microsoft.com/visualstudio/visual-studio-17-8-now-available/)
