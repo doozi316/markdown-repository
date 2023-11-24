@@ -6,7 +6,11 @@
 
 📰 Visual Studio UI 새로 고침 미리 보기 출시
 
+📰 OpenAI, ChatGPT with Voice를 모든 무료 사용자에게 공개
+
 📰 OpenAI, CEO 샘 알트먼을 해고했지만 이를 재고하고 있는 것으로 알려져
+
+📰 OpenAI 직원들, 이사회가 사임하지 않을 경우 퇴사하겠다고 위협
 
 📰 샘 알트만과 그렉 브록만, Microsoft에 합류
 
@@ -16,15 +20,48 @@
 
 📰 Meta, 비디오 합성 및 편집용 AI 모델 Emu Video/Edit 공개
 
+📰 구글, 비밀 계약으로 Spotify가 플레이 스토어 수수료를 내지 않는다고 인정
+
 ## 👁️ 기사 요약 모아보기
 
 ### Visual Studio UI 새로 고침 미리 보기가 출시
 
 [원본 기사](https://devblogs.microsoft.com/visualstudio/the-visual-studio-ui-refresh-preview-is-here/)
 
+### OpenAI, ChatGPT with Voice를 모든 무료 사용자에게 공개
+
+이제 무료 사용자들도 앱내에서 ChatGPT 앱을 통해 음성으로 질문하고 답변 받을수 있게 됨(헤드폰 아이콘)
+9월에 ChatGPT Plus 사용자용으로 미리 공개된 것
+예제 영상에서는 주말동안의 경영진 교체 상황을 의미하는 듯한 농담으로 질문을 던짐
+"팀원들이 긴 밤을 보냈고 우린 배가 고파. 778명이 먹으려면 16인치 피자를 몇 판 주문해야 하지?"
+
+[원본 기사](https://twitter.com/OpenAI/status/1727065166188274145)
+
 ### OpenAI, CEO 샘 알트먼을 해고했지만 이를 재고하고 있는 것으로 알려져
 
 [원본 기사](https://www.zdnet.com/article/openai-ousts-its-ceo-sam-altman/)
+
+### OpenAI 직원들, 이사회가 사임하지 않을 경우 퇴사하겠다고 위협
+
+OpenAI 직원들, 이사회 사퇴 요구
+OpenAI의 730명 이상 직원들이 이사회의 사퇴와 해임된 CEO Sam Altman의 복귀를 요구하는 서한에 서명함.
+직원들은 이사회의 행동이 회사의 미션과 신뢰를 손상시켰으며, 이사회의 능력 부족을 지적함.
+이사회의 결정에 반대하는 주요 인물로는 회사의 최고 과학자이자 이사회 멤버인 Ilya Sutskever가 포함됨.
+OpenAI의 이례적인 구조와 리더십 변화
+OpenAI의 CTO Mira Murati가 임시 CEO로 임명되었으나, 투자자들의 반발로 이사회는 Altman의 복귀를 고려함.
+Microsoft CEO Satya Nadella는 Altman과 Brockman이 새로운 고급 AI 연구 부서를 이끌기 위해 Microsoft에 합류한다고 발표함.
+OpenAI의 이사회는 Murati를 제거하고 Twitch의 전 CEO인 Emmett Shear를 임시 CEO로 임명함.
+OpenAI 직원들의 반응과 Microsoft의 기회
+OpenAI 직원들은 Altman이 회사로 돌아오지 않을 것이라는 소식에 회사를 떠날 준비를 함.
+직원들은 Microsoft의 새로운 자회사에서 모든 OpenAI 직원들을 위한 자리가 있다는 보장을 받음.
+Altman의 해임 이유는 여전히 불분명하며, 직원들은 이사회에 구체적인 증거를 요구함.
+OpenAI의 미래와 거버넌스 구조
+OpenAI의 이사회는 Sutskever, Adam D'Angelo, Helen Toner, Tasha McCauley로 구성되어 있음.
+직원들은 이사회의 사퇴와 Bret Taylor 및 Will Hurd와 같은 새로운 독립 이사의 임명을 요구함.
+이 사태는 OpenAI의 독특한 거버넌스 구조와 AI 개발 경쟁의 분열성을 드러냄.
+
+https://news.hada.io/topic?id=11957
+[원본 기사](https://www.wired.com/story/openai-staff-walk-protest-sam-altman/)
 
 ### 샘 알트만과 그렉 브록만, Microsoft에 합류
 
@@ -85,3 +122,19 @@ Emu Edit는 다양한 이미지 조작 작업을 간소화하고 이미지 편�
 https://news.hada.io/topic?id=11952
 
 [원본 기사](https://ai.meta.com/blog/emu-text-to-video-generation-image-editing-research/)
+
+### 구글, 비밀 계약으로 Spotify가 플레이 스토어 수수료를 내지 않는다고 인정
+
+Google 임원이 Epic 대 Google 재판에서 증언을 통해 Spotify가 Play Store 수수료를 지불하지 않는 비밀 계약이 있음을 밝힘
+Spotify는 자체 결제 시스템을 사용할 때 수수료가 없으며, Google 결제 시스템을 사용할 때는 4%의 낮은 수수료만 지불함
+양사는 각각 5천만 달러를 '성공 기금'에 투자하기로 합의
+Google의 Play Store 수수료 정책
+Google은 일반적으로 구독 앱에 대해 15%의 수수료를 받으나, 개발자가 자체 또는 제3자 결제 솔루션을 사용할 수 있는 '사용자 선택 결제' 프로그램을 통해 11%로 감소할 수 있음
+Google은 Android와 Play에 더 많은 사용자를 유치하고 모든 사용자와 개발자를 위한 경험을 지속적으로 개선하기 위해 특정 파트너십을 통해 다른 서비스 수수료를 적용함
+Google의 다른 대형 회사와의 협상 시도
+Google은 Netflix에게 2017년 Play Store 구독에 대해 10% 수수료만 지불하는 계약을 제안했으나, 현재 Netflix는 Android 앱을 통한 구독 구매를 허용하지 않음
+Google은 지난달 Match Group과 합의하여 Play Store에서 제3자 결제 솔루션을 사용할 수 있도록 함
+Epic은 Google의 '사용자 선택 결제' 제안을 거절하고 이달 초 재판에 참여함. 재판을 통해 Google Play Store의 내부 작동 방식에 대한 많은 정보가 드러남
+
+https://news.hada.io/topic?id=11974
+[원본 기사](https://techcrunch.com/2023/11/20/google-admits-spotify-pays-no-play-store-fees-because-of-a-secret-deal/)
