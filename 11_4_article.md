@@ -10,9 +10,11 @@
 
 📰 OpenAI, CEO 샘 알트먼을 해고했지만 이를 재고하고 있는 것으로 알려져
 
+📰 샘 알트만과 그렉 브록만, Microsoft에 합류
+
 📰 OpenAI 직원들, 이사회가 사임하지 않을 경우 퇴사하겠다고 위협
 
-📰 샘 알트만과 그렉 브록만, Microsoft에 합류
+📰 OpenAI, 샘 알트먼을 해고된 지 일주일도 채 되지 않아 CEO로 다시 데려와
 
 📰 X(구 트위터), 구직 도구 출시
 
@@ -21,6 +23,17 @@
 📰 Meta, 비디오 합성 및 편집용 AI 모델 Emu Video/Edit 공개
 
 📰 구글, 비밀 계약으로 Spotify가 플레이 스토어 수수료를 내지 않는다고 인정
+
+📰 구글, 2024년 6월부터 Chrome의 광고 차단기를 제한하겠다고 밝혀
+
+📰 Microsoft, .NET Chiseled 컨테이너 발표
+
+📰 Microsoft, .NET 8의 ASP.NET Core 발표
+
+📰 Microsoft, Visual Studio 2022 – 17.8 성능 향상
+
+📰 Vite 5.0 출시
+
 
 ## 👁️ 기사 요약 모아보기
 
@@ -40,6 +53,15 @@
 ### OpenAI, CEO 샘 알트먼을 해고했지만 이를 재고하고 있는 것으로 알려져
 
 [원본 기사](https://www.zdnet.com/article/openai-ousts-its-ceo-sam-altman/)
+
+### 샘 알트만과 그렉 브록만, Microsoft에 합류
+
+OpenAI 이사회에 의해 해고된 전 OpenAI CEO인 샘 알트만과 이사회에서 해임된 전 OpenAI의 사장인 그렉 브록만이 Microsoft에 합류.
+Microsoft의 CEO인 사티아 나델라는 샘 알트만과 그렉 브록만이 동료들과 함께 마이크로소프트에 합류해 새로운 첨단 AI 연구팀을 이끌게 된다는 트윗을 올림.
+아직 얼마나 많은 OpenAI 직원이 Microsoft로 이직할 것인지는 밝혀지지 않음.
+또한 Microsoft는 OpenAI와의 파트너십에도 전념할 것임을 밝힘.
+
+[원본 기사](https://www.axios.com/2023/11/20/microsoft-hires-sam-altman-and-greg-brockman-to-lead-new-ai-research-unit)
 
 ### OpenAI 직원들, 이사회가 사임하지 않을 경우 퇴사하겠다고 위협
 
@@ -63,14 +85,9 @@ OpenAI의 이사회는 Sutskever, Adam D'Angelo, Helen Toner, Tasha McCauley로 
 https://news.hada.io/topic?id=11957
 [원본 기사](https://www.wired.com/story/openai-staff-walk-protest-sam-altman/)
 
-### 샘 알트만과 그렉 브록만, Microsoft에 합류
+### OpenAI, 샘 알트먼을 해고된 지 일주일도 채 되지 않아 CEO로 다시 데려와
 
-OpenAI 이사회에 의해 해고된 전 OpenAI CEO인 샘 알트만과 이사회에서 해임된 전 OpenAI의 사장인 그렉 브록만이 Microsoft에 합류.
-Microsoft의 CEO인 사티아 나델라는 샘 알트만과 그렉 브록만이 동료들과 함께 마이크로소프트에 합류해 새로운 첨단 AI 연구팀을 이끌게 된다는 트윗을 올림.
-아직 얼마나 많은 OpenAI 직원이 Microsoft로 이직할 것인지는 밝혀지지 않음.
-또한 Microsoft는 OpenAI와의 파트너십에도 전념할 것임을 밝힘.
-
-[원본 기사](https://www.axios.com/2023/11/20/microsoft-hires-sam-altman-and-greg-brockman-to-lead-new-ai-research-unit)
+[원본 기사](https://www.cnbc.com/2023/11/22/openai-brings-sam-altman-back-as-ceo-days-after-ouster.html)
 
 ### X(구 트위터), 구직 도구 출시
 
@@ -138,3 +155,44 @@ Epic은 Google의 '사용자 선택 결제' 제안을 거절하고 이달 초 �
 
 https://news.hada.io/topic?id=11974
 [원본 기사](https://techcrunch.com/2023/11/20/google-admits-spotify-pays-no-play-store-fees-because-of-a-secret-deal/)
+
+### 구글, 2024년 6월부터 Chrome의 광고 차단기를 제한하겠다고 밝혀
+
+구글이 새로운 광고 차단 기능을 제한하는 크롬 확장 프로그램의 계획을 다시 시작했습니다. 지난 해에 크롬의 인기 있는 확장 프로그램에 얼마나 큰 피해를 줄 것인지에 대한 항의로 인해 새로운 "Manifest V3" 확장 프로그램 형식의 전개를 일시 중단한 이후입니다. 하지만 구글은 변경 사항을 몇 가지 도입하면서도 결국 크롬은 품질이 낮은 필터링 확장 프로그램을 지원하게 될 것입니다.
+
+구글 블로그 글에 따르면, 현재의 크롬 확장 프로그램 형식인 Manifest V2를 2024년 6월부터 단계적으로 사용 중단할 예정입니다. 이 날짜에 구글은 Chrome의 베타, 개발 및 Canary 채널과 같은 미정 버전에서 Manifest V2를 비활성화할 것이며, "Manifest V2 확장 프로그램은 브라우저에서 자동으로 비활성화되며 크롬 웹 스토어에서 Manifest V2 확장 프로그램을 더 이상 설치할 수 없게 될 것"이라고 합니다.
+
+안정적인 채널 배포에 대한 타임라인은 약간 이상하게 표현되어 있습니다. 구글은 "미정 버전에서 변경 사항을 관찰하고 안정화하는 데 최소 한 달이 걸릴 것으로 예상하며, 이후에는 시간이 지남에 따라 안정 채널 크롬으로 전환될 것입니다. 정확한 시기는 수집된 데이터에 따라 다를 수 있으며 이 기간 동안 우리는 진행 상황에 대해 여러분에게 계속 알려드리겠습니다"라고 설명합니다. "데이터"라는 용어에 대한 구글의 관심이 불분명합니다. 확장 프로그램이 충돌하면 그리 큰 문제는 아니며, 사용자가 확장 프로그램을 다시 시작할 때까지 작동을 중지합니다. 아마도 구글이 광고 차단이 작동하지 않으면 사용자들이 왜곡된 정보로 "Firefox"를 검색할지에 대한 우려가 있을 것입니다.
+
+"ExtensionManifestV2Availability" 정책을 사용하는 기업 사용자는 추가 1년 동안 Manifest V2 호환성을 유지할 수 있습니다.
+
+Manifest V3의 구글 세일즈 포인트는 확장 프로그램을 제한함으로써 브라우저가 리소스 부담을 덜 수 있고, 구글이 확장 프로그램 개발자로부터 사용자의 개인 정보를 보호할 수 있다는 것입니다. 그러나 도구의 제한으로 인해 인터넷의 다른 부분에 보다 노출될 수 있으며, 프라이버시 침해의 큰 부분은 구글입니다. 전자 프런티어 재단(EFF)은 구글의 Manifest V3에 대한 설명을 "기만적이고 위협적"이라고 평가하며 "의문이 드는 것은 Mv3가 보안에 큰 기여를 할 것인지"라고 말했습니다.
+
+[원본 기사](https://arstechnica.com/gadgets/2023/11/google-chrome-will-limit-ad-blockers-starting-june-2024/)
+
+### Microsoft, .NET Chiseled 컨테이너 발표
+
+.NET 6, 7, 및 8의 새로운 chiseled Ubuntu 컨테이너 이미지가 제공되어, 이제 본격적으로 프로덕션 환경에서 사용 가능하다. 이는 Canonical과 Microsoft 간의 파트너십의 결과물로, 8.0-jammy-chiseled로 태그되어 있으며 Ubuntu 22.04 (Jammy Jellyfish)를 기반으로 한다. Chiseled 컨테이너는 불필요한 구성 요소를 제거함으로써 컨테이너 이미지의 크기 및 보안과 관련된 일반적인 문제를 해결하려는 목적을 가지고 있다.
+
+Chiseled 이미지는 CVE(보안 취약점) 관리에 대한 고민을 해소하기 위해 구성 요소의 수를 크게 줄인다. anchore/syft를 사용한 비교에서 chiseled 이미지는 7개의 구성 요소만 가지고 있으며, 일반적인 Ubuntu 이미지보다 훨씬 적은 수의 구성 요소를 갖는다.
+
+게시물은 chiseled 이미지의 보안 이점을 강조하며, 이들이 셸과 패키지 관리자가 없어 잠재적인 공격 경로를 제한한다는 점을 강조한다. 이미지는 또한 비루트(non-root)로 제공되어 보안을 더욱 강화한다.
+
+chiseled 이미지의 채택이 권장되며, 특히 .NET 8로 전환하는 사용자들에게 이를 강력히 권장한다. Ubuntu 및 Debian 사용자는 이미지 크기를 상당히 줄일 수 있으며, Alpine 사용자는 chiseled 이미지의 추가 이점을 고려하도록 권장된다.
+
+게시물은 Canonical과 Microsoft 간의 협력 노력을 강조하며, 프로젝트의 미래에 대한 열정을 표현하고 다른 개발자 생태계도 chiseled 이미지를 고려하도록 권장한다.
+
+[원본 기사](https://devblogs.microsoft.com/dotnet/announcing-dotnet-chiseled-containers/)
+
+
+### Microsoft, .NET 8의 ASP.NET Core 발표
+
+[원본 기사](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-8/)
+
+### Microsoft, Visual Studio 2022 – 17.8 성능 향상
+
+[원본 기사](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-8-performance-enhancements/)
+
+### Vite 5.0 출시
+
+[원본 기사](https://vitejs.dev/blog/announcing-vite5)
